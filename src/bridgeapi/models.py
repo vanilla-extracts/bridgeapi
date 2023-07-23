@@ -44,39 +44,7 @@ class Pagination(BaseModel):
 
 
 class PaginatedResult(BridgeBaseModel, GenericModel, Generic[_T]):
-    """Container storing results of a paginated API call.
-
-    When calling a list API endpoint, the first page of results is returned. Existence
-    of more pages can be checked with `.has_more()`. Subsequent pages can be retrieved
-    by calling `.next_page()`:
-
-    ```python
-    from bridgeapi import AppClient
-
-    app_client = AppClient("CLIENT_ID", "CLIENT_SECRET")
-    banks = app_client.list_banks(limit=2)
-    print(banks.resources)  # List of 2 Bank instances
-
-    print(banks.has_more())  # True
-    banks = banks.next_page()
-    print(banks.resources)  # List of 2 other Bank instances
-    ```
-
-    The entire list of objects can be retrieved by calling `.fetch_all()` on the first
-    page returned by the API. Attempting to call it on a subsequent page will result
-    in an error. Beware of potentially large collections, you may exceed API or memory
-    limits, or wait for a long time. You may want to increase the `limit` parameter.
-
-    ```python
-    from bridgeapi import AppClient
-
-    app_client = AppClient("CLIENT_ID", "CLIENT_SECRET")
-    banks = app_client.list_banks(limit=100)
-    print(banks.fetch_all())  # List of all banks
-
-    banks.next_page().fetch_all()  # PaginationError
-    ```
-    """
+    """Container storing results of a paginated API call."""
 
     resources: list[_T]
     pagination: Pagination

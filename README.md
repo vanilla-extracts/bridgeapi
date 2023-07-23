@@ -41,7 +41,52 @@ API endpoints are split between two clients:
   access token and the `Authorization` header to communicate with the API. It needs (user_email,
   user_password) credentials, in addition to the same client credentials as `AppClient`.
 
-## Authentication management with `UserClient`
+All API client methods return a Pydantic model mapping exactly the schema of the API response. The
+raw response object can be accessed with the `.response` property:
+
+```python
+app_client.list_banks()  # PaginatedResult[Bank]
+app_client.list_banks().response  # <Response [200]>
+app_client.list_banks().response.json()  # JSON-parsed raw response body
+```
+
+
+## Paginated results
+
+API endpoints that return a list of results are paginated, i.e. they don't return the complete
+list of objects in one result but in chunks (called pages). When calling a list API endpoint, the
+first page of results is returned. Existence of more pages can be checked with `.has_more()`.
+Subsequent pages can be retrieved by calling `.next_page()`:
+
+```python
+from bridgeapi import AppClient
+
+app_client = AppClient("CLIENT_ID", "CLIENT_SECRET")
+banks = app_client.list_banks(limit=2)
+print(banks.resources)  # List of 2 Bank instances
+
+print(banks.has_more())  # True
+banks = banks.next_page()
+print(banks.resources)  # List of 2 other Bank instances
+```
+
+The entire list of objects can be retrieved by calling `.fetch_all()` on the first page returned
+by the API. Attempting to call it on a subsequent page will result in an error. Beware of
+potentially large collections, you may exceed API or memory limits, or wait for a long time. You
+may also want to increase the `limit` parameter.
+
+```python
+from bridgeapi import AppClient
+
+app_client = AppClient("CLIENT_ID", "CLIENT_SECRET")
+banks = app_client.list_banks(limit=100)
+print(banks.fetch_all())  # List of all banks
+
+banks.next_page().fetch_all()  # PaginationError
+```
+
+
+## User authentication management
 
 The simplest usage of `UserClient` is to it handle all the authorization lifecyle. It will
 automatically obtain an access token and renew it when it expires (after 2 hours):
