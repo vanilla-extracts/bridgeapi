@@ -5,7 +5,7 @@
 
 -----
 
-`bridgeapi` is a client for the [Bridge open banking API aggregator](https://bridgeapi.io).
+`bridgeapi` is a client for the [Bridge open banking API aggregator](https://bridgeapi.io) ([API documentation](https://docs.bridgeapi.io/docs)).
 
 ## Requirements
 
@@ -26,12 +26,14 @@ app_client = AppClient("CLIENT_ID", "CLIENT_SECRET")
 app_client.list_banks()
 app_client.list_users()
 app_client.create_user("john@doe.com", "password")
+...
 
 user_client = UserClient("CLIENT_ID", "CLIENT_SECRET", "john@doe.com", "password")
 user_client.list_items()
 user_client.connect_item()
 user_client.list_accounts()
 user_client.list_transactions()
+...
 ```
 
 API endpoints are split between two clients:
@@ -132,7 +134,7 @@ user_client = UserClient(
     "password",
     user_uuid="uuid",
     access_token="token",
-    expires_at="yyyy-mm-dd HH:MM:SS",
+    expires_at=datetime,  # "yyyy-mm-dd HH:MM:SS"
     auto_renew=False,
 )
 print(user_client.is_authenticated())  # True
