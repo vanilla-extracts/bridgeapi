@@ -23,15 +23,15 @@ pip install bridgeapi
 from bridgeapi import AppClient, UserClient
 
 app_client = AppClient("CLIENT_ID", "CLIENT_SECRET")
-print(app_client.list_banks())
-print(app_client.list_users())
-print(app_client.create_user("john@doe.com", "password"))
+app_client.list_banks()
+app_client.list_users()
+app_client.create_user("john@doe.com", "password")
 
 user_client = UserClient("CLIENT_ID", "CLIENT_SECRET", "john@doe.com", "password")
-print(user_client.list_items())
-print(user_client.connect_item())
-print(user_client.list_accounts())
-print(user_client.list_transactions())
+user_client.list_items()
+user_client.connect_item()
+user_client.list_accounts()
+user_client.list_transactions()
 ```
 
 API endpoints are split between two clients:
@@ -45,9 +45,11 @@ All API client methods return a Pydantic model mapping exactly the schema of the
 raw response object can be accessed with the `.response` property:
 
 ```python
-app_client.list_banks()  # PaginatedResult[Bank]
-app_client.list_banks().response  # <Response [200]>
-app_client.list_banks().response.json()  # JSON-parsed raw response body
+result = app_client.list_banks()
+
+result # PaginatedResult[Bank]
+result.response  # <Response [200]>
+result.response.json()  # JSON-parsed raw response body
 ```
 
 
