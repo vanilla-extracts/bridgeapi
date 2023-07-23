@@ -9,7 +9,7 @@ import requests
 from pydantic import BaseModel, HttpUrl, PrivateAttr, constr
 from pydantic.generics import GenericModel
 
-from bridgeapi.client_base import ClientBase
+from bridgeapi.base_client import BaseClient
 from bridgeapi.exceptions import PaginationError
 
 BaseModelT = TypeVar("BaseModelT", bound="BridgeBaseModel")
@@ -81,12 +81,12 @@ class PaginatedResult(BridgeBaseModel, GenericModel, Generic[_T]):
     resources: list[_T]
     pagination: Pagination
 
-    _client: "ClientBase" = PrivateAttr()
+    _client: "BaseClient" = PrivateAttr()
     _page_number: int = PrivateAttr()
 
     @classmethod
     def from_response(
-        cls, response: requests.Response, client: "ClientBase", page_number: int = 0
+        cls, response: requests.Response, client: "BaseClient", page_number: int = 0
     ) -> "PaginatedResult[_T]":
         result = cls.parse_obj(response.json())
         result._response = response

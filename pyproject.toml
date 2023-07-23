@@ -7,18 +7,15 @@ name = "bridgeapi"
 dynamic = ["version"]
 description = 'Client for the Bridge open banking API aggregator'
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.10"  # Not before 3.10 because we use new the union types syntax
 license = "MIT"
 keywords = []
 authors = [
-  { name = "Alexandre Marty", email = "alexandre@marty.in" },
+  { name = "Alexandre Marty", email = "contact@marty.in" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.7",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: Implementation :: CPython",
@@ -27,9 +24,9 @@ classifiers = [
 dependencies = ["pydantic", "requests"]
 
 [project.urls]
-Documentation = "https://github.com/unknown/bridgeapi#readme"
-Issues = "https://github.com/unknown/bridgeapi/issues"
-Source = "https://github.com/unknown/bridgeapi"
+Documentation = "https://gitlab.com/alex-marty/bridgeapi"
+Issues = "https://gitlab.com/alex-marty/bridgeapi/-/issues"
+Source = "https://gitlab.com/alex-marty/bridgeapi"
 
 [tool.hatch.version]
 path = "src/bridgeapi/__about__.py"
@@ -52,7 +49,7 @@ cov = [
 ]
 
 [[tool.hatch.envs.all.matrix]]
-python = ["3.7", "3.8", "3.9", "3.10", "3.11"]
+python = ["3.10", "3.11"]
 
 [tool.hatch.envs.lint]
 detached = true
@@ -78,12 +75,12 @@ all = [
 ]
 
 [tool.black]
-target-version = ["py37"]
+target-version = ["py310"]
 line-length = 99
 skip-string-normalization = true
 
 [tool.ruff]
-target-version = "py37"
+target-version = "py310"
 line-length = 99
 select = [
   "A",

@@ -5,7 +5,7 @@ import requests
 from bridgeapi.exceptions import RequestError
 
 
-class ClientBase:
+class BaseClient:
     base_url = "https://api.bridgeapi.io/v2/"
     api_version = "2021-06-01"
 
