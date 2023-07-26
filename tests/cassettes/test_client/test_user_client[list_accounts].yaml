@@ -1,0 +1,69 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.bridgeapi.io/v2/accounts
+  response:
+    body:
+      string: "{\"resources\":[{\"id\":37271916,\"name\":\"Pocket GBP\",\"balance\":625.16,\"status\":0,\"status_code_info\":\"OK\",\"status_code_description\":null,\"updated_at\":\"2023-07-26T09:11:11.401Z\",\"type\":\"checking\",\"is_paused\":false,\"currency_code\":\"GBP\",\"item_id\":8170358,\"bank_id\":574,\"loan_details\":null,\"savings_details\":null,\"is_pro\":false,\"iban\":\"GB77BARC20035391348945\"},{\"id\":37271915,\"name\":\"Compte
+        Courant 3\",\"balance\":800.0,\"status\":0,\"status_code_info\":\"OK\",\"status_code_description\":null,\"updated_at\":\"2023-07-26T09:11:11.386Z\",\"type\":\"checking\",\"is_paused\":false,\"currency_code\":\"EUR\",\"item_id\":8170358,\"bank_id\":574,\"loan_details\":null,\"savings_details\":null,\"is_pro\":false,\"iban\":\"FR0530003000402916465922J55\"},{\"id\":37271914,\"name\":\"Compte
+        Courant 2\",\"balance\":1406.61,\"status\":0,\"status_code_info\":\"OK\",\"status_code_description\":null,\"updated_at\":\"2023-07-26T09:11:11.373Z\",\"type\":\"checking\",\"is_paused\":false,\"currency_code\":\"EUR\",\"item_id\":8170358,\"bank_id\":574,\"loan_details\":null,\"savings_details\":null,\"is_pro\":false,\"iban\":\"FR4117569000301446331456R06\"},{\"id\":37271913,\"name\":\"Compte
+        Courant 1\",\"balance\":1201.46,\"status\":0,\"status_code_info\":\"OK\",\"status_code_description\":null,\"updated_at\":\"2023-07-26T09:11:11.358Z\",\"type\":\"checking\",\"is_paused\":false,\"currency_code\":\"EUR\",\"item_id\":8170358,\"bank_id\":574,\"loan_details\":null,\"savings_details\":null,\"is_pro\":false,\"iban\":\"FR6914508000303386763591H62\"},{\"id\":37271912,\"name\":\"Carte
+        Xxxx 7989 (D\xE9bit\xE9e Sur Compte Courant 3)\",\"balance\":-510.27,\"status\":0,\"status_code_info\":\"OK\",\"status_code_description\":null,\"updated_at\":\"2023-07-26T09:11:11.347Z\",\"type\":\"card\",\"is_paused\":false,\"currency_code\":\"EUR\",\"item_id\":8170358,\"bank_id\":574,\"loan_details\":null,\"savings_details\":null,\"is_pro\":false,\"iban\":null},{\"id\":37271911,\"name\":\"Carte
+        Visa Classic - Mr J DOE 02Xx (D\xE9bit\xE9e Sur Compte Courant 2)\",\"balance\":-1102.07,\"status\":0,\"status_code_info\":\"OK\",\"status_code_description\":null,\"updated_at\":\"2023-07-26T09:11:11.333Z\",\"type\":\"card\",\"is_paused\":false,\"currency_code\":\"EUR\",\"item_id\":8170358,\"bank_id\":574,\"loan_details\":null,\"savings_details\":null,\"is_pro\":false,\"iban\":null}],\"pagination\":{\"next_uri\":null}}"
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'self';
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:11:47 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      - Accept-Encoding
+      - Origin
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

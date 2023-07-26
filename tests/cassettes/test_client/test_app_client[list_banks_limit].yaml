@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.bridgeapi.io/v2/banks?limit=2
+  response:
+    body:
+      string: '{"resources":[{"id":592,"name":"BNP Connexis - BETA","country_code":"FR","logo_url":"https://web.bridgeapi.io/img/banks-logo/fr/bnp.png","authentication_type":"WEBVIEW","form":[{"label":"Identifiant","type":"USER","isNum":"0","maxLength":null,"minLength":null},{"label":"Mot
+        de passe","type":"PWD","isNum":"1","maxLength":null,"minLength":null}],"url":"https://api.bridgeapi.io/v2/banks/592/connect-item","is_highlighted":false,"primary_color":null,"secondary_color":null,"parent_name":"BNP","capabilities":["ais"],"channel_type":["dsp2"],"display_order":null,"authentication_page_url":null},{"id":591,"name":"Propulse
+        By CA - BETA","country_code":"FR","logo_url":"https://web.bridgeapi.io/img/banks-logo/fr/propulsebyca-20230623141146.png","authentication_type":"WEBVIEW","form":[{"label":"Identifiant","type":"USER","isNum":"0","maxLength":null,"minLength":null},{"label":"Mot
+        de passe","type":"PWD","isNum":"1","maxLength":null,"minLength":null}],"url":"https://api.bridgeapi.io/v2/banks/591/connect-item","is_highlighted":false,"primary_color":null,"secondary_color":null,"parent_name":null,"capabilities":["ais"],"channel_type":["dsp2"],"display_order":null,"authentication_page_url":null}],"pagination":{"next_uri":"/v2/banks?after=NTkx&limit=2"}}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'self';
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:11:00 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      - Accept-Encoding
+      - Origin
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

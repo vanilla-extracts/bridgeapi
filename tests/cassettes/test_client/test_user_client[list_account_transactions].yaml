@@ -1,0 +1,108 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.bridgeapi.io/v2/accounts/37271913/transactions
+  response:
+    body:
+      string: '{"resources":[{"id":36000071605232,"clean_description":"Cb Temporary
+        Transaction","bank_description":"Cb temporary transaction","amount":-50.0,"date":"2023-07-26","updated_at":"2023-07-26T09:11:11.371Z","currency_code":"EUR","category_id":306,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070890298,"clean_description":"Retrait
+        Dab","bank_description":"Retrait Dab 25-08-20041-757081","amount":-140.0,"date":"2023-07-26","updated_at":"2023-07-26T07:36:19.766Z","currency_code":"EUR","category_id":85,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521373,"clean_description":"Cb
+        Tabac St Phlipp","bank_description":"Cb Tabac St Phlipp Fact 240723","amount":-21.0,"date":"2023-07-25","updated_at":"2023-07-25T07:29:17.202Z","currency_code":"EUR","category_id":308,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521372,"clean_description":"Cb
+        Monsieur Margue","bank_description":"Cb Monsieur Margue Fact 230723","amount":-38.9,"date":"2023-07-24","updated_at":"2023-07-24T16:14:38.266Z","currency_code":"EUR","category_id":183,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521371,"clean_description":"Cb
+        Monoprix","bank_description":"Cb Monoprix Fact 220723","amount":-18.19,"date":"2023-07-23","updated_at":"2023-07-24T16:14:38.261Z","currency_code":"EUR","category_id":273,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521370,"clean_description":"Cb
+        Mougeot Kristal","bank_description":"Cb Mougeot Kristal Fact 190723","amount":-11.2,"date":"2023-07-22","updated_at":"2023-07-24T16:14:38.256Z","currency_code":"EUR","category_id":320,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521369,"clean_description":"Cb
+        Le Bistrot","bank_description":"Cb Le Bistrot Fact 190723","amount":-10.5,"date":"2023-07-22","updated_at":"2023-07-24T16:14:38.251Z","currency_code":"EUR","category_id":227,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521368,"clean_description":"Cb
+        La Source","bank_description":"Cb La Source Fact 190723","amount":-3.9,"date":"2023-07-20","updated_at":"2023-07-24T16:14:38.246Z","currency_code":"EUR","category_id":227,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521367,"clean_description":"Cb
+        Le Jardin Prove","bank_description":"Cb Le Jardin Prove Fact 170723","amount":-18.7,"date":"2023-07-19","updated_at":"2023-07-24T16:14:38.241Z","currency_code":"EUR","category_id":188,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521366,"clean_description":"Vir
+        Sepa Cpam Prestations","bank_description":"Vir Sepa Cpam 75 Prestations","amount":23.0,"date":"2023-07-19","updated_at":"2023-07-24T16:14:38.234Z","currency_code":"EUR","category_id":283,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521365,"clean_description":"Cb
+        Esprit Beaute","bank_description":"Cb Esprit Beaute Fact 170723","amount":-27.0,"date":"2023-07-19","updated_at":"2023-07-24T16:14:38.227Z","currency_code":"EUR","category_id":272,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521364,"clean_description":"Cb
+        Ubud","bank_description":"Cb Ubud Fact 170723","amount":-11.4,"date":"2023-07-19","updated_at":"2023-07-24T16:14:38.222Z","currency_code":"EUR","category_id":320,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521363,"clean_description":"Cb
+        Magasin U","bank_description":"Cb Magasin U Fact 170723","amount":-11.83,"date":"2023-07-18","updated_at":"2023-07-24T16:14:38.217Z","currency_code":"EUR","category_id":273,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521362,"clean_description":"Cb
+        Biocoop","bank_description":"Cb Biocoop Fact 170723","amount":-37.22,"date":"2023-07-18","updated_at":"2023-07-24T16:14:38.212Z","currency_code":"EUR","category_id":273,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521361,"clean_description":"Cb
+        Doctolib* Dr House","bank_description":"Cb Doctolib* Dr House Fact 160723","amount":-25.0,"date":"2023-07-17","updated_at":"2023-07-24T16:14:38.207Z","currency_code":"EUR","category_id":261,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521360,"clean_description":"Vir
+        Sepa Pole Emploi","bank_description":"Vir Sepa Pole Emploi","amount":994.14,"date":"2023-07-16","updated_at":"2023-07-24T16:14:38.201Z","currency_code":"EUR","category_id":327,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521359,"clean_description":"Virement
+        Vers John Doe","bank_description":"Virement Vers John Doe","amount":-3000.0,"date":"2023-07-16","updated_at":"2023-07-24T16:14:38.196Z","currency_code":"EUR","category_id":78,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521357,"clean_description":"Prlv
+        Direction Generale Des Fina","bank_description":"Prlv Direction Generale Des
+        Fina","amount":-21.0,"date":"2023-07-16","updated_at":"2023-07-24T16:14:38.185Z","currency_code":"EUR","category_id":209,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521356,"clean_description":"Essentiel
+        Agir","bank_description":"* Essentiel Agir","amount":-8.6,"date":"2023-07-16","updated_at":"2023-07-24T16:14:38.180Z","currency_code":"EUR","category_id":79,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521355,"clean_description":"Prlv
+        Navigo Annuel Gie Comutit","bank_description":"PRLV Navigo Annuel - GIE COMUTIT","amount":-75.2,"date":"2023-07-12","updated_at":"2023-07-24T16:14:38.174Z","currency_code":"EUR","category_id":196,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521354,"clean_description":"CB
+        Wp Baps London Gbp Com Change Tx","bank_description":"CARTE 0251646 CB WP-BAPS
+        26/07/23 LONDON GBP 100,00 COM CHANGE 3,72E TX 0,8735 CBLM F-JANE DOE","amount":-118.2,"date":"2023-07-12","updated_at":"2023-07-24T16:14:38.169Z","currency_code":"EUR","category_id":1,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521353,"clean_description":"Commission
+        Paiement Par","bank_description":"COMMISSION PAIEMENT PAR CARTE","amount":-0.35,"date":"2023-07-12","updated_at":"2023-07-24T16:14:38.163Z","currency_code":"EUR","category_id":79,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521352,"clean_description":"Prlv
+        Orange Sa Orange","bank_description":"Prlv Orange Sa-Orange","amount":-19.99,"date":"2023-07-12","updated_at":"2023-07-24T16:14:38.158Z","currency_code":"EUR","category_id":277,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521351,"clean_description":"Retrait
+        Dab","bank_description":"Retrait Dab 11-08-11206-005343","amount":-40.0,"date":"2023-07-12","updated_at":"2023-07-24T16:14:38.153Z","currency_code":"EUR","category_id":85,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521350,"clean_description":"Cb
+        Cafe Madeleine","bank_description":"Cb Cafe Madeleine Fact 090723","amount":-13.0,"date":"2023-07-11","updated_at":"2023-07-24T16:14:38.148Z","currency_code":"EUR","category_id":313,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521349,"clean_description":"Cb
+        Uber *eats","bank_description":"Cb Uber *eats Fact 100723","amount":-25.12,"date":"2023-07-11","updated_at":"2023-07-24T16:14:38.143Z","currency_code":"EUR","category_id":188,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521348,"clean_description":"Cb
+        Cafe Madeleine","bank_description":"Cb Cafe Madeleine Fact 090723","amount":-13.0,"date":"2023-07-11","updated_at":"2023-07-24T16:14:38.134Z","currency_code":"EUR","category_id":313,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521347,"clean_description":"Vir
+        Sepa Doe John","bank_description":"Vir Sepa Doe John","amount":66.09,"date":"2023-07-11","updated_at":"2023-07-24T16:14:38.129Z","currency_code":"EUR","category_id":3,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521346,"clean_description":"Cb
+        Naturalia","bank_description":"Cb 4044 Naturalia Fact 100723","amount":-8.1,"date":"2023-07-11","updated_at":"2023-07-24T16:14:38.124Z","currency_code":"EUR","category_id":273,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521345,"clean_description":"Cb
+        Trainsweateat.c","bank_description":"Cb Trainsweateat.c Fact 090723","amount":-9.9,"date":"2023-07-10","updated_at":"2023-07-24T16:14:38.120Z","currency_code":"EUR","category_id":280,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521344,"clean_description":"Cb
+        Franprix","bank_description":"Cb Franprix Fact 080723","amount":-0.85,"date":"2023-07-09","updated_at":"2023-07-24T16:14:38.115Z","currency_code":"EUR","category_id":273,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521343,"clean_description":"Vir
+        Sepa Mangopay","bank_description":"Vir Sepa Mangopay","amount":45.0,"date":"2023-07-09","updated_at":"2023-07-24T16:14:38.110Z","currency_code":"EUR","category_id":231,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521342,"clean_description":"Prlv
+        Orange Sa Orange","bank_description":"Prlv Orange Sa-Orange","amount":-29.99,"date":"2023-07-09","updated_at":"2023-07-24T16:14:38.106Z","currency_code":"EUR","category_id":277,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521341,"clean_description":"Vir
+        Sepa Doe John","bank_description":"Vir Sepa Doe John","amount":500.0,"date":"2023-07-09","updated_at":"2023-07-24T16:14:38.101Z","currency_code":"EUR","category_id":3,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521340,"clean_description":"Cb
+        Netflix Com","bank_description":"Cb Netflix Com Fact 080723","amount":-17.99,"date":"2023-07-09","updated_at":"2023-07-24T16:14:38.096Z","currency_code":"EUR","category_id":219,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521339,"clean_description":"Echeance
+        Pret","bank_description":"Echeance Pret 107335c","amount":-108.36,"date":"2023-07-09","updated_at":"2023-07-24T16:14:38.091Z","currency_code":"EUR","category_id":89,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521338,"clean_description":"Cb
+        Carrefour City","bank_description":"Cb Carrefour City Fact 060723","amount":-10.3,"date":"2023-07-08","updated_at":"2023-07-24T16:14:38.086Z","currency_code":"EUR","category_id":273,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521337,"clean_description":"Echeance
+        Pret","bank_description":"Echeance Pret 107335c","amount":-822.29,"date":"2023-07-08","updated_at":"2023-07-24T16:14:38.081Z","currency_code":"EUR","category_id":89,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521336,"clean_description":"Cb
+        Big Five","bank_description":"Cb Big Five 1 Fact 050723","amount":-18.0,"date":"2023-07-08","updated_at":"2023-07-24T16:14:38.077Z","currency_code":"EUR","category_id":227,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521335,"clean_description":"Cb
+        Big Five","bank_description":"Cb Big Five 1 Fact 050723","amount":-12.0,"date":"2023-07-08","updated_at":"2023-07-24T16:14:38.072Z","currency_code":"EUR","category_id":227,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521334,"clean_description":"Vir
+        Inst M Doe John","bank_description":"Vir Inst M Doe John","amount":1000.0,"date":"2023-07-06","updated_at":"2023-07-24T16:14:38.067Z","currency_code":"EUR","category_id":3,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521333,"clean_description":"Cb
+        Instea Paris","bank_description":"Cb Instea Paris Fact 050723","amount":-13.0,"date":"2023-07-06","updated_at":"2023-07-24T16:14:38.062Z","currency_code":"EUR","category_id":183,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521332,"clean_description":"Cb
+        Le Grand Corona","bank_description":"Cb Le Grand Corona Fact 040723","amount":-22.4,"date":"2023-07-06","updated_at":"2023-07-24T16:14:38.058Z","currency_code":"EUR","category_id":83,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521331,"clean_description":"Cb
+        Ikea","bank_description":"Cb Ikea Fact 030723","amount":-32.98,"date":"2023-07-05","updated_at":"2023-07-24T16:14:38.053Z","currency_code":"EUR","category_id":221,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521330,"clean_description":"Cb
+        Mademoiselle Bi","bank_description":"Cb Mademoiselle Bi Fact 040723","amount":-64.0,"date":"2023-07-05","updated_at":"2023-07-24T16:14:38.047Z","currency_code":"EUR","category_id":248,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521329,"clean_description":"Prlv
+        Allianz I A R D","bank_description":"Prlv Allianz I A R D","amount":-7.51,"date":"2023-07-05","updated_at":"2023-07-24T16:14:38.041Z","currency_code":"EUR","category_id":247,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521328,"clean_description":"Prlv
+        Edf Clients Particuliers","bank_description":"Prlv Edf Clients Particuliers","amount":-69.79,"date":"2023-07-05","updated_at":"2023-07-24T16:14:38.035Z","currency_code":"EUR","category_id":217,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521327,"clean_description":"Vir
+        Sepa M Doe John","bank_description":"Vir Sepa M Doe John","amount":250.0,"date":"2023-07-04","updated_at":"2023-07-24T16:14:38.031Z","currency_code":"EUR","category_id":3,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521326,"clean_description":"Cb
+        Franprix","bank_description":"Cb Franprix Fact 030723","amount":-5.35,"date":"2023-07-04","updated_at":"2023-07-24T16:14:38.026Z","currency_code":"EUR","category_id":273,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false},{"id":36000070521325,"clean_description":"Cb
+        Velib Metropole","bank_description":"Cb Velib Metropole Fact 030723","amount":-10.3,"date":"2023-07-04","updated_at":"2023-07-24T16:14:38.022Z","currency_code":"EUR","category_id":84,"account_id":37271913,"show_client_side":true,"is_deleted":false,"is_future":false}],"generated_at":"2023-07-26T09:13:45.628Z","pagination":{"next_uri":"/v2/accounts/37271913/transactions?after=MjAyMy0wNy0wNDozNjAwMDA3MDUyMTMyNQ&limit=50"}}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:13:45 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

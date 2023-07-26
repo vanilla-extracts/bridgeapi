@@ -1,0 +1,101 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.bridgeapi.io/v2/categories
+  response:
+    body:
+      string: '{"resources":[{"id":168,"name":"Food & Dining","categories":[{"id":83,"name":"Restaurants"},{"id":188,"name":"Food
+        - Others"},{"id":260,"name":"Fast foods"},{"id":273,"name":"Supermarkets /
+        Groceries"},{"id":313,"name":"Coffee shop"}]},{"id":164,"name":"Bank","categories":[{"id":79,"name":"Banking
+        fees and charges"},{"id":89,"name":"Mortgage refund"},{"id":191,"name":"Monthly
+        Debit"},{"id":192,"name":"Savings"},{"id":194,"name":"Mortgage"},{"id":195,"name":"Bank
+        - Others"},{"id":306,"name":"Banking services"},{"id":756587,"name":"Payment
+        incidents"}]},{"id":167,"name":"Education & Children","categories":[{"id":237,"name":"Education
+        & Children - Others"},{"id":238,"name":"School supplies"},{"id":239,"name":"Tuition"},{"id":240,"name":"Pension"},{"id":241,"name":"Student
+        housing"},{"id":259,"name":"Student loan"},{"id":266,"name":"Toys"},{"id":267,"name":"Baby-sitter
+        & Daycare"}]},{"id":162,"name":"Shopping","categories":[{"id":183,"name":"Gifts"},{"id":184,"name":"High
+        Tech"},{"id":186,"name":"Shopping - Others"},{"id":243,"name":"Books"},{"id":262,"name":"Sporting
+        goods"},{"id":272,"name":"Clothing & Shoes"},{"id":318,"name":"Music"},{"id":319,"name":"Movies"},{"id":441888,"name":"Licences"}]},{"id":171,"name":"Bills
+        & Utilities","categories":[{"id":180,"name":"Internet"},{"id":219,"name":"Cable
+        TV"},{"id":258,"name":"Home phone"},{"id":277,"name":"Mobile phone"},{"id":280,"name":"Subscription
+        - Others"}]},{"id":303,"name":"Withdrawals, checks & transfer","categories":[{"id":78,"name":"Transfer"},{"id":85,"name":"Withdrawals"},{"id":88,"name":"Checks"},{"id":326,"name":"Internal
+        transfer"}]},{"id":2,"name":"Incomes","categories":[{"id":3,"name":"Other
+        incomes"},{"id":80,"name":"Interest incomes"},{"id":230,"name":"Salaries"},{"id":231,"name":"Sales"},{"id":232,"name":"Services"},{"id":233,"name":"Extra
+        incomes"},{"id":271,"name":"Deposit"},{"id":279,"name":"Retirement"},{"id":282,"name":"Internal
+        transfer"},{"id":283,"name":"Refunds"},{"id":289,"name":"Savings"},{"id":314,"name":"Rent"},{"id":327,"name":"Pension"},{"id":441893,"name":"Grants"},{"id":441894,"name":"Loans"}]},{"id":161,"name":"Home","categories":[{"id":216,"name":"Rent"},{"id":217,"name":"Electricity"},{"id":218,"name":"Gas"},{"id":220,"name":"Home
+        - Others"},{"id":221,"name":"Home improvement"},{"id":222,"name":"Maintenance"},{"id":246,"name":"Home
+        insurance"},{"id":293,"name":"Water"},{"id":323,"name":"Lawn & Garden"},{"id":328,"name":"Misc.
+        utilities"}]},{"id":315,"name":"Personal care","categories":[{"id":235,"name":"Hairdresser"},{"id":248,"name":"Cosmetics"},{"id":316,"name":"Spa
+        & Massage"},{"id":317,"name":"Personal care - Others"},{"id":321,"name":"Beauty
+        care"}]},{"id":166,"name":"Business services","categories":[{"id":90,"name":"Business
+        services - Others"},{"id":202,"name":"Advertising"},{"id":203,"name":"Office
+        services"},{"id":204,"name":"Shipping"},{"id":205,"name":"Printing"},{"id":265,"name":"Business
+        expenses"},{"id":270,"name":"Online services"},{"id":274,"name":"Office supplies"},{"id":441886,"name":"Employer
+        contributions"},{"id":441889,"name":"Accounting"},{"id":441890,"name":"Salaries"},{"id":441891,"name":"Salary
+        of executives"},{"id":441892,"name":"Hiring fees"},{"id":441895,"name":"Consulting"},{"id":441896,"name":"Outsourcing"},{"id":441897,"name":"Disability
+        Insurance"},{"id":441898,"name":"Training taxes"},{"id":441899,"name":"Legal
+        Fees"},{"id":441900,"name":"Marketing"}]},{"id":163,"name":"Health","categories":[{"id":236,"name":"Pharmacy"},{"id":245,"name":"Health
+        insurance"},{"id":261,"name":"Doctor"},{"id":268,"name":"Health - Others"},{"id":322,"name":"Optician
+        / Eyecare"},{"id":325,"name":"Dentist"}]},{"id":165,"name":"Auto & Transport","categories":[{"id":84,"name":"Auto
+        & Transport - Others"},{"id":87,"name":"Gas & Fuel"},{"id":196,"name":"Public
+        transportation"},{"id":197,"name":"Train ticket"},{"id":198,"name":"Plane
+        ticket"},{"id":247,"name":"Auto insurance"},{"id":251,"name":"Parking"},{"id":264,"name":"Car
+        rental"},{"id":288,"name":"Car maintenance"},{"id":309,"name":"Tolls"}]},{"id":159,"name":"Taxes","categories":[{"id":206,"name":"Taxes
+        - Others"},{"id":207,"name":"Fine"},{"id":208,"name":"Incomes taxes"},{"id":209,"name":"Property
+        taxes"},{"id":302,"name":"Taxes"},{"id":441988,"name":"VAT"}]},{"id":160,"name":"Misc.
+        expenses","categories":[{"id":1,"name":"Uncategorized"},{"id":276,"name":"Others
+        spending"},{"id":278,"name":"Insurance"},{"id":294,"name":"Charity"},{"id":308,"name":"Tobacco"},{"id":324,"name":"Laundry
+        / Dry cleaning"}]},{"id":170,"name":"Entertainment","categories":[{"id":223,"name":"Entertainment
+        - Others"},{"id":224,"name":"Pets"},{"id":226,"name":"Hobbies"},{"id":227,"name":"Bars
+        & Clubs"},{"id":242,"name":"Sports"},{"id":244,"name":"Arts & Amusement"},{"id":249,"name":"Travels
+        / Vacation"},{"id":263,"name":"Hotels"},{"id":269,"name":"Amusements"},{"id":310,"name":"Winter
+        sports"},{"id":320,"name":"Eating out"}]}],"generated_at":"2023-07-26T09:11:01.131Z","pagination":{"next_uri":null}}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:11:01 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

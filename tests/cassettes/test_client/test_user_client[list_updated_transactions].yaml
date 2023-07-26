@@ -1,0 +1,113 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.bridgeapi.io/v2/transactions/updated
+  response:
+    body:
+      string: "{\"resources\":[{\"id\":36000071605232,\"clean_description\":\"Cb Temporary
+        Transaction\",\"bank_description\":\"Cb temporary transaction\",\"amount\":-50.0,\"date\":\"2023-07-26\",\"updated_at\":\"2023-07-26T09:11:11.371Z\",\"currency_code\":\"EUR\",\"category_id\":306,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070890300,\"clean_description\":\"Cb
+        Temporary Transaction\",\"bank_description\":\"Cb temporary transaction\",\"amount\":-50.0,\"date\":\"2023-07-25\",\"updated_at\":\"2023-07-26T07:36:19.769Z\",\"currency_code\":\"EUR\",\"category_id\":306,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":true,\"is_future\":false},{\"id\":36000070890298,\"clean_description\":\"Retrait
+        Dab\",\"bank_description\":\"Retrait Dab 25-08-20041-757081\",\"amount\":-140.0,\"date\":\"2023-07-26\",\"updated_at\":\"2023-07-26T07:36:19.766Z\",\"currency_code\":\"EUR\",\"category_id\":85,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000071547601,\"clean_description\":\"CB
+        Mad Cours Mcdonald S Agdal Oncf\",\"bank_description\":\"PAIEMENT PAR CARTE
+        22/07/2023 61 MAD COURS 0.09361 MCDONALD S AGDAL ONCF\",\"amount\":-5.71,\"date\":\"2023-07-26\",\"updated_at\":\"2023-07-26T07:36:19.748Z\",\"currency_code\":\"EUR\",\"category_id\":260,\"account_id\":37271912,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070890301,\"clean_description\":\"Prlv
+        Sepa Macif Idf Production\",\"bank_description\":\"PRLV SEPA MACIF IDF Production\",\"amount\":-72.32,\"date\":\"2023-07-25\",\"updated_at\":\"2023-07-25T07:29:17.235Z\",\"currency_code\":\"EUR\",\"category_id\":278,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521373,\"clean_description\":\"Cb
+        Tabac St Phlipp\",\"bank_description\":\"Cb Tabac St Phlipp Fact 240723\",\"amount\":-21.0,\"date\":\"2023-07-25\",\"updated_at\":\"2023-07-25T07:29:17.202Z\",\"currency_code\":\"EUR\",\"category_id\":308,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070890297,\"clean_description\":\"CB
+        Mc Donald's\",\"bank_description\":\"CARTE 25/07/23 78 MC DONALD'S\",\"amount\":-26.0,\"date\":\"2023-07-25\",\"updated_at\":\"2023-07-25T07:29:17.172Z\",\"currency_code\":\"EUR\",\"category_id\":260,\"account_id\":37271911,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070890296,\"clean_description\":\"CB
+        Leclerc\",\"bank_description\":\"CARTE 25/07/23 78 LECLERC\",\"amount\":-31.08,\"date\":\"2023-07-25\",\"updated_at\":\"2023-07-25T07:29:17.167Z\",\"currency_code\":\"EUR\",\"category_id\":273,\"account_id\":37271911,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521541,\"clean_description\":\"Cb
+        Temporary Transaction\",\"bank_description\":\"Cb temporary transaction\",\"amount\":-50.0,\"date\":\"2023-07-24\",\"updated_at\":\"2023-07-24T16:24:54.122Z\",\"currency_code\":\"EUR\",\"category_id\":306,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":true,\"is_future\":false},{\"id\":36000070521579,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.35,\"date\":\"2023-05-20\",\"updated_at\":\"2023-07-24T16:14:56.672Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521578,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.07,\"date\":\"2023-05-02\",\"updated_at\":\"2023-07-24T16:14:56.664Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521577,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.64,\"date\":\"2023-05-09\",\"updated_at\":\"2023-07-24T16:14:56.657Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521576,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-1.0,\"date\":\"2023-05-05\",\"updated_at\":\"2023-07-24T16:14:56.649Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521575,\"clean_description\":\"Paypal\",\"bank_description\":\"Paypal
+        *11iio\",\"amount\":-4.36,\"date\":\"2023-05-09\",\"updated_at\":\"2023-07-24T16:14:56.642Z\",\"currency_code\":\"GBP\",\"category_id\":270,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521574,\"clean_description\":\"John
+        Henry\",\"bank_description\":\"John Henry\",\"amount\":-52.25,\"date\":\"2023-05-05\",\"updated_at\":\"2023-07-24T16:14:56.634Z\",\"currency_code\":\"GBP\",\"category_id\":272,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521573,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.75,\"date\":\"2023-05-05\",\"updated_at\":\"2023-07-24T16:14:56.627Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521572,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.09,\"date\":\"2023-05-04\",\"updated_at\":\"2023-07-24T16:14:56.619Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521571,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.97,\"date\":\"2023-05-20\",\"updated_at\":\"2023-07-24T16:14:56.611Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521570,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.29,\"date\":\"2023-05-19\",\"updated_at\":\"2023-07-24T16:14:56.604Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521569,\"clean_description\":\"Sumup
+        *sh Ty\",\"bank_description\":\"Sumup *sh ty\",\"amount\":-15.0,\"date\":\"2023-05-05\",\"updated_at\":\"2023-07-24T16:14:56.596Z\",\"currency_code\":\"GBP\",\"category_id\":1,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521568,\"clean_description\":\"To
+        John Doe\",\"bank_description\":\"To John Doe\",\"amount\":-5.0,\"date\":\"2023-05-02\",\"updated_at\":\"2023-07-24T16:14:56.589Z\",\"currency_code\":\"GBP\",\"category_id\":262,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521567,\"clean_description\":\"Paypal
+        *hpfrancesas\",\"bank_description\":\"Paypal *hpfrancesas\",\"amount\":-3.65,\"date\":\"2023-05-20\",\"updated_at\":\"2023-07-24T16:14:56.582Z\",\"currency_code\":\"GBP\",\"category_id\":270,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521566,\"clean_description\":\"To
+        The Royal British Legion\",\"bank_description\":\"To The Royal British Legion\",\"amount\":-0.4,\"date\":\"2023-05-09\",\"updated_at\":\"2023-07-24T16:14:56.575Z\",\"currency_code\":\"GBP\",\"category_id\":294,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521565,\"clean_description\":\"To
+        John Doe\",\"bank_description\":\"To John Doe\",\"amount\":-5.0,\"date\":\"2023-05-23\",\"updated_at\":\"2023-07-24T16:14:56.568Z\",\"currency_code\":\"GBP\",\"category_id\":262,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521564,\"clean_description\":\"To
+        John Doe\",\"bank_description\":\"To John Doe\",\"amount\":-5.0,\"date\":\"2023-05-30\",\"updated_at\":\"2023-07-24T16:14:56.561Z\",\"currency_code\":\"GBP\",\"category_id\":262,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521563,\"clean_description\":\"To
+        John Doe\",\"bank_description\":\"To John Doe\",\"amount\":-5.0,\"date\":\"2023-05-09\",\"updated_at\":\"2023-07-24T16:14:56.553Z\",\"currency_code\":\"GBP\",\"category_id\":262,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521562,\"clean_description\":\"Paypal
+        *phantomfx\",\"bank_description\":\"Paypal *phantomfx\",\"amount\":-48.93,\"date\":\"2023-05-02\",\"updated_at\":\"2023-07-24T16:14:56.546Z\",\"currency_code\":\"GBP\",\"category_id\":270,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521561,\"clean_description\":\"Paypal
+        *docusigninc\",\"bank_description\":\"Paypal *docusigninc\",\"amount\":-13.6,\"date\":\"2023-05-09\",\"updated_at\":\"2023-07-24T16:14:56.539Z\",\"currency_code\":\"GBP\",\"category_id\":270,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521560,\"clean_description\":\"To
+        John Doe\",\"bank_description\":\"To John Doe\",\"amount\":-5.0,\"date\":\"2023-05-16\",\"updated_at\":\"2023-07-24T16:14:56.531Z\",\"currency_code\":\"GBP\",\"category_id\":262,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521559,\"clean_description\":\"Amzn
+        Mktp Fr\",\"bank_description\":\"Amzn Mktp Fr\",\"amount\":-13.71,\"date\":\"2023-05-19\",\"updated_at\":\"2023-07-24T16:14:56.524Z\",\"currency_code\":\"GBP\",\"category_id\":186,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521558,\"clean_description\":\"Fiverr\",\"bank_description\":\"Fiverr
+        *\",\"amount\":-185.75,\"date\":\"2023-05-04\",\"updated_at\":\"2023-07-24T16:14:56.517Z\",\"currency_code\":\"GBP\",\"category_id\":441900,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521557,\"clean_description\":\"Paypal
+        *adobesystem\",\"bank_description\":\"Paypal *adobesystem\",\"amount\":-13.03,\"date\":\"2023-05-20\",\"updated_at\":\"2023-07-24T16:14:56.511Z\",\"currency_code\":\"GBP\",\"category_id\":270,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521556,\"clean_description\":\"To
+        John Doe\",\"bank_description\":\"To John Doe\",\"amount\":-5.0,\"date\":\"2023-04-30\",\"updated_at\":\"2023-07-24T16:14:56.503Z\",\"currency_code\":\"GBP\",\"category_id\":262,\"account_id\":37271916,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521555,\"clean_description\":\"CB
+        Mad Cours Automobil Illy Jet\",\"bank_description\":\"PAIEMENT PAR CARTE 06/04/2023
+        5000 MAD COURS 0.09347 AUTOMOBIL ILLY JET\",\"amount\":-467.36,\"date\":\"2023-04-30\",\"updated_at\":\"2023-07-24T16:14:56.482Z\",\"currency_code\":\"EUR\",\"category_id\":1,\"account_id\":37271915,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521554,\"clean_description\":\"CB
+        Mad Cours Mcdonald S Agdal Oncf\",\"bank_description\":\"PAIEMENT PAR CARTE
+        22/04/2023 61 MAD COURS 0.09361 MCDONALD S AGDAL ONCF\",\"amount\":-5.71,\"date\":\"2023-04-30\",\"updated_at\":\"2023-07-24T16:14:56.475Z\",\"currency_code\":\"EUR\",\"category_id\":260,\"account_id\":37271915,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521553,\"clean_description\":\"CB
+        Idfs G\",\"bank_description\":\"PAIEMENT PAR CARTE 25/04/2023 IDFS T2 G\",\"amount\":-194.0,\"date\":\"2023-04-30\",\"updated_at\":\"2023-07-24T16:14:56.468Z\",\"currency_code\":\"EUR\",\"category_id\":183,\"account_id\":37271915,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521552,\"clean_description\":\"CB
+        Mad Cours Marjane M.m G\",\"bank_description\":\"PAIEMENT PAR CARTE 09/04/2023
+        73.6 MAD COURS 0.09402 MARJANE M.M G\",\"amount\":-6.92,\"date\":\"2023-04-30\",\"updated_at\":\"2023-07-24T16:14:56.462Z\",\"currency_code\":\"EUR\",\"category_id\":249,\"account_id\":37271915,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521551,\"clean_description\":\"CB
+        Mad Cours Total I Ouagar\",\"bank_description\":\"PAIEMENT PAR CARTE 06/04/2023
+        300 MAD COURS 0.09347 TOTAL I-OUAGAR\",\"amount\":-28.04,\"date\":\"2023-04-30\",\"updated_at\":\"2023-07-24T16:14:56.455Z\",\"currency_code\":\"EUR\",\"category_id\":1,\"account_id\":37271915,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521550,\"clean_description\":\"Relev\xE9
+        Diff\xE9r\xE9\",\"bank_description\":\"Relev\xE9 diff\xE9r\xE9 Carte 4976********0200\",\"amount\":-1180.2,\"date\":\"2023-05-01\",\"updated_at\":\"2023-07-24T16:14:56.436Z\",\"currency_code\":\"EUR\",\"category_id\":191,\"account_id\":37271914,\"show_client_side\":false,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521549,\"clean_description\":\"Vir
+        Inst Mr John Doe\",\"bank_description\":\"VIR INST MR JOHN DOE\",\"amount\":880.0,\"date\":\"2023-05-30\",\"updated_at\":\"2023-07-24T16:14:56.430Z\",\"currency_code\":\"EUR\",\"category_id\":3,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521548,\"clean_description\":\"Vir
+        Inst Mme Jane Doe\",\"bank_description\":\"VIR INST MME JANE DOE\",\"amount\":250.0,\"date\":\"2023-05-02\",\"updated_at\":\"2023-07-24T16:14:56.423Z\",\"currency_code\":\"EUR\",\"category_id\":3,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521547,\"clean_description\":\"Retrait
+        Dab Cdn Fete De\",\"bank_description\":\"RETRAIT DAB 01/05/2023 CDN FETE DE
+        CB*0282 78\",\"amount\":-50.0,\"date\":\"2023-05-01\",\"updated_at\":\"2023-07-24T16:14:56.415Z\",\"currency_code\":\"EUR\",\"category_id\":85,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521546,\"clean_description\":\"Prlv
+        Sepa Bouygues Telecom\",\"bank_description\":\"PRLV SEPA Bouygues Telecom\",\"amount\":-22.86,\"date\":\"2023-05-15\",\"updated_at\":\"2023-07-24T16:14:56.409Z\",\"currency_code\":\"EUR\",\"category_id\":277,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521545,\"clean_description\":\"Prlv
+        Sepa Macif Idf Production\",\"bank_description\":\"PRLV SEPA MACIF IDF Production\",\"amount\":-72.32,\"date\":\"2023-05-25\",\"updated_at\":\"2023-07-24T16:14:56.403Z\",\"currency_code\":\"EUR\",\"category_id\":278,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521544,\"clean_description\":\"Prlv
+        Sepa Matmut Rouen\",\"bank_description\":\"PRLV SEPA MATMUT ROUEN\",\"amount\":-18.01,\"date\":\"2023-05-10\",\"updated_at\":\"2023-07-24T16:14:56.396Z\",\"currency_code\":\"EUR\",\"category_id\":278,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521543,\"clean_description\":\"Vir
+        Inst Mr John Doe\",\"bank_description\":\"VIR INST MR JOHN DOE\",\"amount\":880.0,\"date\":\"2023-04-30\",\"updated_at\":\"2023-07-24T16:14:56.390Z\",\"currency_code\":\"EUR\",\"category_id\":3,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521542,\"clean_description\":\"Prlv
+        Sepa Macif Idf Production\",\"bank_description\":\"PRLV SEPA MACIF IDF Production\",\"amount\":-72.32,\"date\":\"2023-04-25\",\"updated_at\":\"2023-07-24T16:14:56.384Z\",\"currency_code\":\"EUR\",\"category_id\":278,\"account_id\":37271914,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521540,\"clean_description\":\"Acme
+        Salaire\",\"bank_description\":\"ACME SALAIRE\",\"amount\":2302.2,\"date\":\"2023-05-30\",\"updated_at\":\"2023-07-24T16:14:56.355Z\",\"currency_code\":\"EUR\",\"category_id\":230,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521539,\"clean_description\":\"CB
+        Carte\",\"bank_description\":\"ACHAT CB 3X4XCBCETELEM 06.05.23 CARTE NUMERO
+        105\",\"amount\":-34.75,\"date\":\"2023-05-30\",\"updated_at\":\"2023-07-24T16:14:56.348Z\",\"currency_code\":\"EUR\",\"category_id\":188,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false},{\"id\":36000070521538,\"clean_description\":\"CB
+        Paypal *betclic\",\"bank_description\":\"CB PAYPAL *BETCLIC FACT 110523\",\"amount\":-25.0,\"date\":\"2023-05-30\",\"updated_at\":\"2023-07-24T16:14:56.342Z\",\"currency_code\":\"EUR\",\"category_id\":270,\"account_id\":37271913,\"show_client_side\":true,\"is_deleted\":false,\"is_future\":false}],\"generated_at\":\"2023-07-26T09:13:35.743Z\",\"pagination\":{\"next_uri\":\"/v2/transactions/updated?after=MjAyMy0wNy0yNFQxNjoxNDo1Ni4zNDJaXzM2MDAwMDcwNTIxNTM4&limit=50\"}}"
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:13:35 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: '{"email": "john@doe.com", "password": "password123"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Client-Id:
+      - 46f5e40e66624e6f9ea97452250e6b8c
+      Client-Secret:
+      - wlqVKKc9PlcHobG2DPMWeIeCAudD6ibgMu4ODNY5wXgtMSIkURtveFOMDU7M4Z56
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '52'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: POST
+    uri: https://api.bridgeapi.io/v2/authenticate
+  response:
+    body:
+      string: '{"access_token":"b706dd6b40f9616a0a39984a959ffa5bfa6b1bca-001cf0d8-2711-4f3a-b84f-996aac1ae243","expires_at":"2023-07-26T11:10:16.058Z","user":{"uuid":"998945b4-c977-43e4-a854-d9680fa00fd5","email":"john@doe.com"}}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Security-Policy:
+      - default-src 'self';
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:10:16 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      - Origin
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

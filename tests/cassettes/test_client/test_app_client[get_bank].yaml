@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.bridgeapi.io/v2/banks/574
+  response:
+    body:
+      string: '{"id":574,"name":"Demo bank","country_code":"FR","logo_url":"https://web.bridgeapi.io/img/banks-logo/fr/demo-bank.png","authentication_type":"INTERNAL_CREDS","form":[{"label":"Identifiant","type":"USER","isNum":"0","maxLength":null,"minLength":null},{"label":"Mot
+        de passe","type":"PWD","isNum":"0","maxLength":null,"minLength":null}],"is_highlighted":false,"primary_color":null,"secondary_color":null,"parent_name":null,"capabilities":["ais","account_check","single_transfer","bulk_transfer","single_payment","single_payment_scheduled"],"transfer":{"nb_max_transactions":1,"max_size_label":140,"multiple_dates_transfers":false},"payment":{"nb_max_transactions":1,"max_size_label":140,"multiple_dates_payments":false,"sender_iban_available":false},"channel_type":["dsp2","direct_access"],"display_order":null,"authentication_page_url":null}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'self';
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:11:00 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      - Accept-Encoding
+      - Origin
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

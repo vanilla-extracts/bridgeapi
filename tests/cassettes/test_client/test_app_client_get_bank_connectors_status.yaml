@@ -1,0 +1,290 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Bridge-Version:
+      - '2021-06-01'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.bridgeapi.io/v2/banks/insights
+  response:
+    body:
+      string: "[{\"bank_name\":\"Revolut UK\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"GB\",\"children\":[{\"id\":433,\"bank_name\":\"Revolut
+        UK\",\"percentage_success\":99.77,\"percentage_error\":0.23,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":false},{\"id\":464,\"bank_name\":\"Revolut
+        Business UK\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":false}],\"active\":false},{\"id\":580,\"bank_name\":\"Allianz\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":23,\"bank_name\":\"Bred\",\"percentage_success\":99.65,\"percentage_error\":0.35,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":485,\"bank_name\":\"Banque
+        Fiducial\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":132,\"bank_name\":\"Soci\xE9t\xE9
+        Marseillaise de Cr\xE9dit\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"bank_name\":\"Cr\xE9dit
+        Maritime\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":286,\"bank_name\":\"Cr\xE9dit
+        Maritime Littoral du Sud-Ouest\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":288,\"bank_name\":\"Cr\xE9dit
+        Maritime Atlantique\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":289,\"bank_name\":\"Cr\xE9dit
+        Maritime Grand Ouest\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true}],\"active\":true},{\"bank_name\":\"Revolut
+        DE\",\"percentage_success\":99.16,\"percentage_error\":0.84,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"DE\",\"children\":[{\"id\":434,\"bank_name\":\"Revolut
+        DE\",\"percentage_success\":99.36,\"percentage_error\":0.64,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":466,\"bank_name\":\"Revolut
+        Business DE\",\"percentage_success\":97.62,\"percentage_error\":2.38,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"id\":156,\"bank_name\":\"Hello
+        Bank\",\"percentage_success\":99.6,\"percentage_error\":0.4,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":425,\"bank_name\":\"Floa\",\"percentage_success\":93.06,\"percentage_error\":6.94,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":134,\"bank_name\":\"Banque
+        Laydernier\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":570,\"bank_name\":\"Revolut
+        LU\",\"percentage_success\":97.0,\"percentage_error\":3.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"LU\",\"children\":[],\"active\":true},{\"id\":435,\"bank_name\":\"SwissLife\",\"percentage_success\":98.55,\"percentage_error\":1.45,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":279,\"bank_name\":\"AXA
+        Banque\",\"percentage_success\":98.83,\"percentage_error\":1.17,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":469,\"bank_name\":\"American
+        Express ES\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"ES\",\"children\":[],\"active\":false},{\"id\":457,\"bank_name\":\"N26
+        (Number 26) DE\",\"percentage_success\":97.39,\"percentage_error\":2.61,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"DE\",\"children\":[],\"active\":true},{\"bank_name\":\"BTP
+        Banque\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[{\"id\":543,\"bank_name\":\"BTP
+        Banque (Legacy)\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":544,\"bank_name\":\"BTP
+        Banque\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true}],\"active\":true},{\"id\":409,\"bank_name\":\"Compte
+        Nickel\",\"percentage_success\":99.85,\"percentage_error\":0.15,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":571,\"bank_name\":\"Revolut
+        NL\",\"percentage_success\":97.83,\"percentage_error\":2.17,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"NL\",\"children\":[],\"active\":true},{\"id\":501,\"bank_name\":\"Cajamar
+        - BETA\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"ES\",\"children\":[],\"active\":false},{\"id\":122,\"bank_name\":\"Boursorama\",\"percentage_success\":95.89,\"percentage_error\":4.11,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":136,\"bank_name\":\"Banque
+        Rh\xF4ne-Alpes\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"bank_name\":\"Cr\xE9dit
+        Mutuel\",\"percentage_success\":99.59,\"percentage_error\":0.41,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":140,\"bank_name\":\"Cr\xE9dit
+        Mutuel Nord-Europe\",\"percentage_success\":99.55,\"percentage_error\":0.45,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":165,\"bank_name\":\"Cr\xE9dit
+        Mutuel du Sud-Ouest Pro\",\"percentage_success\":99.69,\"percentage_error\":0.31,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":141,\"bank_name\":\"Cr\xE9dit
+        Mutuel Maine-Anjou\",\"percentage_success\":99.54,\"percentage_error\":0.46,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":470,\"bank_name\":\"Banque
+        Europ\xE9enne du Cr\xE9dit Mutuel\",\"percentage_success\":99.55,\"percentage_error\":0.45,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":142,\"bank_name\":\"Cr\xE9dit
+        Mutuel Massif Central\",\"percentage_success\":99.45,\"percentage_error\":0.55,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":143,\"bank_name\":\"Cr\xE9dit
+        Mutuel Antilles-Guyane\",\"percentage_success\":99.6,\"percentage_error\":0.4,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":138,\"bank_name\":\"Cr\xE9dit
+        Mutuel du Sud-Ouest\",\"percentage_success\":99.81,\"percentage_error\":0.19,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":130,\"bank_name\":\"Cr\xE9dit
+        Mutuel de Bretagne\",\"percentage_success\":99.82,\"percentage_error\":0.18,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":166,\"bank_name\":\"Cr\xE9dit
+        Mutuel de Bretagne Pro\",\"percentage_success\":99.87,\"percentage_error\":0.13,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":167,\"bank_name\":\"Cr\xE9dit
+        Mutuel Massif Central Pro\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":139,\"bank_name\":\"Cr\xE9dit
+        Mutuel Oc\xE9an\",\"percentage_success\":99.56,\"percentage_error\":0.44,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":16,\"bank_name\":\"Cr\xE9dit
+        Mutuel - Site National\",\"percentage_success\":99.51,\"percentage_error\":0.49,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"id\":494,\"bank_name\":\"EVO
+        Banco\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[],\"active\":true},{\"id\":525,\"bank_name\":\"Caixa
+        Geral De Depositos\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"PT\",\"children\":[],\"active\":false},{\"id\":133,\"bank_name\":\"Banque
+        Courtois\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":530,\"bank_name\":\"Spuerkeess
+        Beta\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"LU\",\"children\":[],\"active\":false},{\"bank_name\":\"Revolut
+        ES\",\"percentage_success\":99.69,\"percentage_error\":0.31,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[{\"id\":465,\"bank_name\":\"Revolut
+        Business ES\",\"percentage_success\":99.6,\"percentage_error\":0.4,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":432,\"bank_name\":\"Revolut
+        ES\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"id\":420,\"bank_name\":\"Orange
+        Bank\",\"percentage_success\":98.11,\"percentage_error\":1.89,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":285,\"bank_name\":\"Groupama
+        Banque\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":467,\"bank_name\":\"American
+        Express UK\",\"percentage_success\":96.0,\"percentage_error\":4.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"GB\",\"children\":[],\"active\":true},{\"id\":419,\"bank_name\":\"Yomoni\",\"percentage_success\":94.69,\"percentage_error\":5.31,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":490,\"bank_name\":\"Wise
+        - BETA\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":126,\"bank_name\":\"American
+        Express\",\"percentage_success\":98.78,\"percentage_error\":1.22,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":297,\"bank_name\":\"Banque
+        De Savoie\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"Santander
+        ES\",\"percentage_success\":99.05,\"percentage_error\":0.95,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[{\"id\":310,\"bank_name\":\"Santander
+        Particulares\",\"percentage_success\":98.27,\"percentage_error\":1.73,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":323,\"bank_name\":\"Santander
+        Empresas e Instituciones\",\"percentage_success\":99.77,\"percentage_error\":0.23,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":503,\"bank_name\":\"Santander
+        Banca Privada\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"bank_name\":\"Banque
+        Populaire\",\"percentage_success\":99.92,\"percentage_error\":0.08,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[{\"id\":18,\"bank_name\":\"Banque
+        Populaire Rives de Paris\",\"percentage_success\":99.91,\"percentage_error\":0.09,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":38,\"bank_name\":\"Banque
+        Populaire Grand Ouest\",\"percentage_success\":99.94,\"percentage_error\":0.06,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":30,\"bank_name\":\"Banque
+        Populaire Aquitaine Centre Atlantique\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":25,\"bank_name\":\"Banque
+        Populaire Occitane\",\"percentage_success\":99.89,\"percentage_error\":0.11,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":36,\"bank_name\":\"Banque
+        Populaire Alsace Lorraine Champagne\",\"percentage_success\":99.96,\"percentage_error\":0.04,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":15,\"bank_name\":\"Banque
+        Populaire Val de France\",\"percentage_success\":99.94,\"percentage_error\":0.06,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":39,\"bank_name\":\"Banque
+        Populaire M\xE9diterran\xE9e\",\"percentage_success\":99.81,\"percentage_error\":0.19,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":40,\"bank_name\":\"Banque
+        Populaire Du Sud\",\"percentage_success\":99.92,\"percentage_error\":0.08,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":37,\"bank_name\":\"Banque
+        Populaire Du Nord\",\"percentage_success\":99.92,\"percentage_error\":0.08,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":32,\"bank_name\":\"Banque
+        Populaire Bourgogne Franche-Comt\xE9\",\"percentage_success\":99.88,\"percentage_error\":0.12,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":28,\"bank_name\":\"Banque
+        Populaire Auvergne Rh\xF4ne Alpes\",\"percentage_success\":99.92,\"percentage_error\":0.08,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true}],\"active\":true},{\"id\":468,\"bank_name\":\"American
+        Express DE\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"DE\",\"children\":[],\"active\":false},{\"id\":413,\"bank_name\":\"N26
+        (Number 26)\",\"percentage_success\":97.82,\"percentage_error\":2.18,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"SG\",\"percentage_success\":99.72,\"percentage_error\":0.28,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[{\"id\":145,\"bank_name\":\"SG
+        Pro (ex Soci\xE9t\xE9 G\xE9n\xE9rale)\",\"percentage_success\":99.88,\"percentage_error\":0.12,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"active\":true},{\"id\":282,\"bank_name\":\"SG
+        Entreprises (ex Soci\xE9t\xE9 G\xE9n\xE9rale)\",\"percentage_success\":99.75,\"percentage_error\":0.25,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"active\":true},{\"id\":5,\"bank_name\":\"SG
+        Particulier (ex Soci\xE9t\xE9 G\xE9n\xE9rale)\",\"percentage_success\":99.69,\"percentage_error\":0.31,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"active\":true}],\"active\":true},{\"id\":431,\"bank_name\":\"Swile\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":429,\"bank_name\":\"DEGIRO\",\"percentage_success\":99.57,\"percentage_error\":0.43,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"NL\",\"children\":[],\"active\":true},{\"bank_name\":\"Revolut
+        FR\",\"percentage_success\":97.81,\"percentage_error\":2.19,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":452,\"bank_name\":\"Revolut
+        Business FR\",\"percentage_success\":99.02,\"percentage_error\":0.98,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":422,\"bank_name\":\"Revolut
+        FR\",\"percentage_success\":97.72,\"percentage_error\":2.28,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"bank_name\":\"Natixis\",\"percentage_success\":87.83,\"percentage_error\":12.17,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":411,\"bank_name\":\"Natixis
+        Inter\xE9pargne (N\xB0 d'entreprise)\",\"percentage_success\":87.58,\"percentage_error\":12.42,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":418,\"bank_name\":\"Natixis
+        Inter\xE9pargne (Mail & N\xB0 d'entreprise)\",\"percentage_success\":90.1,\"percentage_error\":9.9,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":410,\"bank_name\":\"Natixis
+        Inter\xE9pargne (E-mail)\",\"percentage_success\":87.12,\"percentage_error\":12.88,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":585,\"bank_name\":\"Natixis
+        Wealth Management - BETA\",\"percentage_success\":0.0,\"percentage_error\":100.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"bank_name\":\"Bankia\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"ES\",\"children\":[{\"id\":493,\"bank_name\":\"Bankia
+        Particulares\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":327,\"bank_name\":\"Bankia
+        Empresas\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true}],\"active\":true},{\"id\":495,\"bank_name\":\"ING
+        Espa\xF1a\",\"percentage_success\":99.58,\"percentage_error\":0.42,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[],\"active\":true},{\"id\":137,\"bank_name\":\"Banque
+        Tarneaud\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":504,\"bank_name\":\"Ma
+        French Bank\",\"percentage_success\":99.8,\"percentage_error\":0.2,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":496,\"bank_name\":\"Openbank\",\"percentage_success\":78.86,\"percentage_error\":21.14,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[],\"active\":true},{\"id\":401,\"bank_name\":\"Banque
+        BCP Particuliers\",\"percentage_success\":99.75,\"percentage_error\":0.25,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":590,\"bank_name\":\"LCL
+        Essentiel Pro - BETA\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"Bankinter\",\"percentage_success\":99.53,\"percentage_error\":0.47,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"ES\",\"children\":[{\"id\":367,\"bank_name\":\"Bankinter
+        Empresas Beta\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"active\":true},{\"id\":497,\"bank_name\":\"Bankinter
+        Particulares\",\"percentage_success\":98.82,\"percentage_error\":1.18,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true}],\"active\":true},{\"id\":528,\"bank_name\":\"Santander\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"PT\",\"children\":[],\"active\":false},{\"id\":302,\"bank_name\":\"Monabanq\",\"percentage_success\":97.71,\"percentage_error\":2.29,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":579,\"bank_name\":\"Kutxabank
+        Particulares - Beta\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[],\"active\":true},{\"bank_name\":\"BNP\",\"percentage_success\":99.19,\"percentage_error\":0.81,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":281,\"bank_name\":\"BNP
+        Net Entreprises (Navigation S\xE9curis\xE9e)\",\"percentage_success\":97.77,\"percentage_error\":2.23,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":172,\"bank_name\":\"BNP
+        Paribas Pro\",\"percentage_success\":98.93,\"percentage_error\":1.07,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":587,\"bank_name\":\"BNP
+        Antilles Guyanne - BETA\",\"percentage_success\":25.0,\"percentage_error\":75.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":416,\"bank_name\":\"BNP
+        Paribas Priv\xE9e\",\"percentage_success\":99.29,\"percentage_error\":0.71,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":293,\"bank_name\":\"BNP
+        Net Entreprises (Lecteur)\",\"percentage_success\":99.66,\"percentage_error\":0.34,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":588,\"bank_name\":\"BNP
+        Nouvelle-Cal\xE9donie - BETA\",\"percentage_success\":85.71,\"percentage_error\":14.29,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":349,\"bank_name\":\"BNP
+        Martinique\",\"percentage_success\":93.42,\"percentage_error\":6.58,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":583,\"bank_name\":\"BNP
+        Reunion - BETA\",\"percentage_success\":9.32,\"percentage_error\":90.68,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":350,\"bank_name\":\"BNP
+        Guyane\",\"percentage_success\":96.99,\"percentage_error\":3.01,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":348,\"bank_name\":\"BNP
+        Guadeloupe\",\"percentage_success\":93.69,\"percentage_error\":6.31,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":6,\"bank_name\":\"BNP
+        Paribas Particulier\",\"percentage_success\":99.64,\"percentage_error\":0.36,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":578,\"bank_name\":\"BNP
+        Net Entreprises (Cl\xE9 digitale Entreprise)\",\"percentage_success\":98.61,\"percentage_error\":1.39,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":347,\"bank_name\":\"BNP
+        Reunion\",\"percentage_success\":50.27,\"percentage_error\":49.73,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":false}],\"active\":true},{\"id\":489,\"bank_name\":\"Pumpkin\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":428,\"bank_name\":\"Shine\",\"percentage_success\":99.82,\"percentage_error\":0.18,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":532,\"bank_name\":\"BGL
+        BNP Paribas\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"LU\",\"children\":[],\"active\":false},{\"id\":573,\"bank_name\":\"Revolut
+        PT\",\"percentage_success\":98.67,\"percentage_error\":1.33,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"PT\",\"children\":[],\"active\":true},{\"id\":487,\"bank_name\":\"Anytime\",\"percentage_success\":96.21,\"percentage_error\":3.79,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":537,\"bank_name\":\"Fortis\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"BE\",\"children\":[],\"active\":false},{\"id\":498,\"bank_name\":\"Banque
+        BCP Pro\",\"percentage_success\":98.65,\"percentage_error\":1.35,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":144,\"bank_name\":\"Milleis
+        Banque\",\"percentage_success\":99.08,\"percentage_error\":0.92,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":294,\"bank_name\":\"Banque
+        Chalus\",\"percentage_success\":98.86,\"percentage_error\":1.14,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"Ark\xE9a\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"FR\",\"children\":[{\"id\":481,\"bank_name\":\"Ark\xE9a
+        Banking Services\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"active\":true},{\"id\":482,\"bank_name\":\"Ark\xE9a
+        Banque Entreprises et Institutionnels\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"active\":true},{\"id\":292,\"bank_name\":\"Ark\xE9a
+        Banque Priv\xE9e\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"active\":true}],\"active\":true},{\"id\":414,\"bank_name\":\"Carrefour
+        Banque\",\"percentage_success\":97.61,\"percentage_error\":2.39,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"CIC\",\"percentage_success\":99.49,\"percentage_error\":0.51,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[{\"id\":14,\"bank_name\":\"CIC\",\"percentage_success\":99.58,\"percentage_error\":0.42,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":476,\"bank_name\":\"CIC
+        Banque Priv\xE9e\",\"percentage_success\":95.25,\"percentage_error\":4.75,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true}],\"active\":true},{\"id\":368,\"bank_name\":\"Ibercaja\",\"percentage_success\":99.17,\"percentage_error\":0.83,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[],\"active\":true},{\"id\":412,\"bank_name\":\"Unilend\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":296,\"bank_name\":\"Banque
+        SBE\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"HSBC\",\"percentage_success\":99.01,\"percentage_error\":0.99,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":295,\"bank_name\":\"HSBC
+        Pro Question M\xE9morable\",\"percentage_success\":97.7,\"percentage_error\":2.3,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":299,\"bank_name\":\"HSBC
+        Professionnel (Elys PC)\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":298,\"bank_name\":\"HSBC
+        Entreprise (Elys PC)\",\"percentage_success\":99.9,\"percentage_error\":0.1,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":577,\"bank_name\":\"HSBC
+        Entreprise (Elys PC) - Beta\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":false},{\"id\":280,\"bank_name\":\"HSBC
+        France\",\"percentage_success\":98.87,\"percentage_error\":1.13,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"bank_name\":\"Banco
+        Sabadell\",\"percentage_success\":99.39,\"percentage_error\":0.61,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"ES\",\"children\":[{\"id\":322,\"bank_name\":\"Banco
+        Sabadell Particulares\",\"percentage_success\":99.29,\"percentage_error\":0.71,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"active\":true},{\"id\":427,\"bank_name\":\"Banco
+        Sabadell Empresas (Tarjeta secundaria)\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"active\":true},{\"id\":426,\"bank_name\":\"Banco
+        Sabadell Empresas (CAL)\",\"percentage_success\":97.59,\"percentage_error\":2.41,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":324,\"bank_name\":\"Banco
+        Sabadell Empresas (DNI)\",\"percentage_success\":99.65,\"percentage_error\":0.35,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true}],\"active\":true},{\"id\":424,\"bank_name\":\"Banque
+        Transatlantique\",\"percentage_success\":98.7,\"percentage_error\":1.3,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"Hypovereinsbank
+        (HVB)\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"DE\",\"children\":[{\"id\":365,\"bank_name\":\"Hypovereinsbank
+        Unternehmer\",\"percentage_success\":0.0,\"percentage_error\":100.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":false},{\"id\":364,\"bank_name\":\"Hypovereinsbank
+        Privatkunden\",\"percentage_success\":25.0,\"percentage_error\":75.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":false}],\"active\":false},{\"bank_name\":\"Cr\xE9dit
+        Coop\xE9ratif\",\"percentage_success\":99.38,\"percentage_error\":0.62,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":499,\"bank_name\":\"Cr\xE9dit
+        Coop\xE9ratif Entreprise\",\"percentage_success\":99.34,\"percentage_error\":0.66,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":506,\"bank_name\":\"Cr\xE9dit
+        Coop\xE9ratif Entreprise (Lecteur sans fil)\",\"percentage_success\":85.52,\"percentage_error\":14.48,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":false},{\"id\":284,\"bank_name\":\"Cr\xE9dit
+        Coop\xE9ratif Particuliers\",\"percentage_success\":99.39,\"percentage_error\":0.61,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true}],\"active\":true},{\"id\":480,\"bank_name\":\"Louvre
+        Banque Priv\xE9e (ex BPE Banque Priv\xE9e)\",\"percentage_success\":98.17,\"percentage_error\":1.83,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"LCL\",\"percentage_success\":98.98,\"percentage_error\":1.02,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":283,\"bank_name\":\"LCL
+        Entreprise\",\"percentage_success\":78.36,\"percentage_error\":21.64,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":575,\"bank_name\":\"LCL
+        Espace Pro\",\"percentage_success\":72.83,\"percentage_error\":27.17,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":458,\"bank_name\":\"LCL
+        Entreprise (legacy lecteur sans fil)\",\"percentage_success\":85.71,\"percentage_error\":14.29,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":false},{\"id\":179,\"bank_name\":\"LCL
+        Pro\",\"percentage_success\":99.31,\"percentage_error\":0.69,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":152,\"bank_name\":\"LCL
+        Particuliers\",\"percentage_success\":99.67,\"percentage_error\":0.33,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"id\":129,\"bank_name\":\"ING
+        France\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":572,\"bank_name\":\"Revolut
+        IT\",\"percentage_success\":98.63,\"percentage_error\":1.37,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"IT\",\"children\":[],\"active\":true},{\"id\":478,\"bank_name\":\"Caisse
+        d'Epargne Entreprises (CENET Lecteur sans fil)\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":423,\"bank_name\":\"C-Zam\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":303,\"bank_name\":\"BforBank\",\"percentage_success\":98.2,\"percentage_error\":1.8,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":415,\"bank_name\":\"Oney
+        Banque\",\"percentage_success\":79.58,\"percentage_error\":20.42,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":486,\"bank_name\":\"Themis
+        Banque\",\"percentage_success\":86.55,\"percentage_error\":13.45,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":421,\"bank_name\":\"Qonto\",\"percentage_success\":90.84,\"percentage_error\":9.16,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":541,\"bank_name\":\"CBC\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"BE\",\"children\":[],\"active\":false},{\"bank_name\":\"Caisse
+        d'Epargne\",\"percentage_success\":99.76,\"percentage_error\":0.24,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[{\"id\":444,\"bank_name\":\"Caisse
+        d'Epargne Languedoc-Roussillon\",\"percentage_success\":99.75,\"percentage_error\":0.25,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":440,\"bank_name\":\"Caisse
+        d'Epargne Bourgogne Franche-Comt\xE9\",\"percentage_success\":99.77,\"percentage_error\":0.23,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":448,\"bank_name\":\"Caisse
+        d'Epargne C\xF4te d'Azur\",\"percentage_success\":99.83,\"percentage_error\":0.17,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":447,\"bank_name\":\"Caisse
+        d'Epargne Loire-Centre\",\"percentage_success\":99.74,\"percentage_error\":0.26,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":441,\"bank_name\":\"Caisse
+        d'Epargne Bretagne-Pays De Loire\",\"percentage_success\":99.73,\"percentage_error\":0.27,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":4,\"bank_name\":\"Caisse
+        d'Epargne Particulier\",\"percentage_success\":99.57,\"percentage_error\":0.43,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":449,\"bank_name\":\"Caisse
+        d'Epargne Auvergne et Limousin\",\"percentage_success\":99.82,\"percentage_error\":0.18,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":442,\"bank_name\":\"Caisse
+        d'Epargne Midi-Pyr\xE9n\xE9es\",\"percentage_success\":99.72,\"percentage_error\":0.28,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":437,\"bank_name\":\"Caisse
+        d'Epargne Ile De France\",\"percentage_success\":99.81,\"percentage_error\":0.19,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":450,\"bank_name\":\"Caisse
+        d'Epargne Grand Est Europe\",\"percentage_success\":99.75,\"percentage_error\":0.25,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":446,\"bank_name\":\"Caisse
+        d'Epargne Loire Dr\xF4me Ard\xE8che\",\"percentage_success\":99.76,\"percentage_error\":0.24,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":443,\"bank_name\":\"Caisse
+        d'Epargne Aquitaine Poitou-Charentes\",\"percentage_success\":99.76,\"percentage_error\":0.24,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":438,\"bank_name\":\"Caisse
+        d'Epargne Provence Alpes Corse\",\"percentage_success\":99.75,\"percentage_error\":0.25,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":451,\"bank_name\":\"Caisse
+        d\u2019Epargne Hauts de France\",\"percentage_success\":99.83,\"percentage_error\":0.17,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":445,\"bank_name\":\"Caisse
+        d'Epargne Rh\xF4ne Alpes\",\"percentage_success\":99.72,\"percentage_error\":0.28,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true},{\"id\":439,\"bank_name\":\"Caisse
+        d'Epargne Normandie\",\"percentage_success\":99.75,\"percentage_error\":0.25,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true}],\"active\":true},{\"id\":436,\"bank_name\":\"Lydia\",\"percentage_success\":99.27,\"percentage_error\":0.73,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"bank_name\":\"Cr\xE9dit
+        Agricole\",\"percentage_success\":99.81,\"percentage_error\":0.19,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[{\"id\":116,\"bank_name\":\"Cr\xE9dit
+        Agricole Pyr\xE9n\xE9es Gascogne\",\"percentage_success\":98.82,\"percentage_error\":1.18,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":74,\"bank_name\":\"Cr\xE9dit
+        Agricole Normandie Seine\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":64,\"bank_name\":\"Cr\xE9dit
+        Agricole Languedoc\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":71,\"bank_name\":\"Cr\xE9dit
+        Agricole Nord De France\",\"percentage_success\":99.98,\"percentage_error\":0.02,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":48,\"bank_name\":\"Cr\xE9dit
+        Agricole Aquitaine\",\"percentage_success\":99.95,\"percentage_error\":0.05,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":54,\"bank_name\":\"Cr\xE9dit
+        Agricole Centre France\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":77,\"bank_name\":\"Cr\xE9dit
+        Agricole Sud M\xE9diterran\xE9e\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":119,\"bank_name\":\"Cr\xE9dit
+        Agricole Nord Est\",\"percentage_success\":99.16,\"percentage_error\":0.84,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":79,\"bank_name\":\"Cr\xE9dit
+        Agricole Toulouse 31\",\"percentage_success\":99.95,\"percentage_error\":0.05,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":118,\"bank_name\":\"Cr\xE9dit
+        Agricole Lorraine\",\"percentage_success\":98.91,\"percentage_error\":1.09,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":78,\"bank_name\":\"Cr\xE9dit
+        Agricole Sud Rh\xF4ne Alpes\",\"percentage_success\":99.96,\"percentage_error\":0.04,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":57,\"bank_name\":\"Cr\xE9dit
+        Agricole Charente-Maritime\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":56,\"bank_name\":\"Cr\xE9dit
+        Agricole Champagne-Bourgogne\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":70,\"bank_name\":\"Cr\xE9dit
+        Agricole Morbihan\",\"percentage_success\":99.92,\"percentage_error\":0.08,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":59,\"bank_name\":\"Cr\xE9dit
+        Agricole Corse\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":80,\"bank_name\":\"Cr\xE9dit
+        Agricole Touraine Poitou\",\"percentage_success\":99.96,\"percentage_error\":0.04,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":49,\"bank_name\":\"Cr\xE9dit
+        Agricole Centre Loire\",\"percentage_success\":99.98,\"percentage_error\":0.02,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":51,\"bank_name\":\"Cr\xE9dit
+        Agricole Anjou Maine\",\"percentage_success\":99.94,\"percentage_error\":0.06,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":72,\"bank_name\":\"Cr\xE9dit
+        Agricole Nord Midi-Pyr\xE9n\xE9es\",\"percentage_success\":99.98,\"percentage_error\":0.02,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":60,\"bank_name\":\"Cr\xE9dit
+        Agricole C\xF4tes d'Armor\",\"percentage_success\":99.94,\"percentage_error\":0.06,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":73,\"bank_name\":\"Cr\xE9dit
+        Agricole Normandie\",\"percentage_success\":99.95,\"percentage_error\":0.05,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":66,\"bank_name\":\"Cr\xE9dit
+        Agricole Martinique-Guyane\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":114,\"bank_name\":\"Cr\xE9dit
+        Agricole Alsace Vosges\",\"percentage_success\":99.87,\"percentage_error\":0.13,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":52,\"bank_name\":\"Cr\xE9dit
+        Agricole Atlantique Vend\xE9e\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":65,\"bank_name\":\"Cr\xE9dit
+        Agricole Loire Haute Loire\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":63,\"bank_name\":\"Cr\xE9dit
+        Agricole Ille-et-Vilaine\",\"percentage_success\":99.95,\"percentage_error\":0.05,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":21,\"bank_name\":\"Cr\xE9dit
+        Agricole Savoie\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":117,\"bank_name\":\"Cr\xE9dit
+        Agricole Franche Comt\xE9\",\"percentage_success\":98.59,\"percentage_error\":1.41,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":58,\"bank_name\":\"Cr\xE9dit
+        Agricole Charente Perigord\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":120,\"bank_name\":\"Cr\xE9dit
+        Agricole Val de France\",\"percentage_success\":98.48,\"percentage_error\":1.52,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":50,\"bank_name\":\"Cr\xE9dit
+        Agricole Alpes Provence\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":55,\"bank_name\":\"Cr\xE9dit
+        Agricole Centre-Ouest\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":53,\"bank_name\":\"Cr\xE9dit
+        Agricole Centre-Est\",\"percentage_success\":99.95,\"percentage_error\":0.05,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":75,\"bank_name\":\"Cr\xE9dit
+        Agricole Provence C\xF4te d'Azur\",\"percentage_success\":99.95,\"percentage_error\":0.05,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":76,\"bank_name\":\"Cr\xE9dit
+        Agricole R\xE9union\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":62,\"bank_name\":\"Cr\xE9dit
+        Agricole Guadeloupe\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":61,\"bank_name\":\"Cr\xE9dit
+        Agricole Finist\xE8re\",\"percentage_success\":99.95,\"percentage_error\":0.05,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":113,\"bank_name\":\"Cr\xE9dit
+        Agricole Ile de France\",\"percentage_success\":99.82,\"percentage_error\":0.18,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":69,\"bank_name\":\"Cr\xE9dit
+        Agricole Deux-S\xE8vres\",\"percentage_success\":99.94,\"percentage_error\":0.06,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":115,\"bank_name\":\"Cr\xE9dit
+        Agricole Brie Picardie\",\"percentage_success\":99.35,\"percentage_error\":0.65,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true}],\"active\":true},{\"id\":474,\"bank_name\":\"Soci\xE9t\xE9
+        de Banque Monaco\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"bank_name\":\"Sparkasse\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"DE\",\"children\":[{\"id\":382,\"bank_name\":\"Berlin
+        - Privatkunden\",\"percentage_success\":58.33,\"percentage_error\":41.67,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":false},{\"id\":380,\"bank_name\":\"K\xF6lnbonn
+        - Privatkunden\",\"percentage_success\":50.0,\"percentage_error\":50.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":false}],\"active\":false},{\"id\":147,\"bank_name\":\"Caisse
+        d'Epargne Pro\",\"percentage_success\":99.81,\"percentage_error\":0.19,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":135,\"bank_name\":\"Banque
+        Nuger\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":507,\"bank_name\":\"KBC\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"BE\",\"children\":[],\"active\":false},{\"bank_name\":\"La
+        Banque Postale\",\"percentage_success\":99.82,\"percentage_error\":0.18,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[{\"id\":151,\"bank_name\":\"La
+        Banque Postale Pro\",\"percentage_success\":97.61,\"percentage_error\":2.39,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true},{\"id\":17,\"bank_name\":\"La
+        Banque Postale Particulier\",\"percentage_success\":99.88,\"percentage_error\":0.12,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"active\":true}],\"active\":true},{\"id\":304,\"bank_name\":\"Oney
+        - Banque Accord\",\"percentage_success\":91.22,\"percentage_error\":8.78,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":569,\"bank_name\":\"Revolut
+        BE\",\"percentage_success\":97.73,\"percentage_error\":2.27,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"BE\",\"children\":[],\"active\":true},{\"bank_name\":\"CaixaBank\",\"percentage_success\":99.5,\"percentage_error\":0.5,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"ES\",\"children\":[{\"id\":305,\"bank_name\":\"CaixaBank
+        Particulares\",\"percentage_success\":99.31,\"percentage_error\":0.69,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":325,\"bank_name\":\"CaixaBank
+        Empresas\",\"percentage_success\":99.76,\"percentage_error\":0.24,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true}],\"active\":true},{\"id\":20,\"bank_name\":\"Cr\xE9dit
+        du Nord\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":417,\"bank_name\":\"Caisse
+        d'Epargne Entreprises (CENET)\",\"percentage_success\":99.79,\"percentage_error\":0.21,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":591,\"bank_name\":\"Propulse
+        By CA - BETA\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":374,\"bank_name\":\"Kutxabank\",\"percentage_success\":63.11,\"percentage_error\":36.89,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[],\"active\":true},{\"id\":563,\"bank_name\":\"Memo
+        Bank\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":484,\"bank_name\":\"Qonto
+        ES\",\"percentage_success\":86.96,\"percentage_error\":13.04,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"ES\",\"children\":[],\"active\":true},{\"id\":589,\"bank_name\":\"Blank\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":488,\"bank_name\":\"PayPal\",\"percentage_success\":99.91,\"percentage_error\":0.09,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":475,\"bank_name\":\"Binck
+        DEPRECATED\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":505,\"bank_name\":\"manager.one\",\"percentage_success\":99.7,\"percentage_error\":0.3,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":131,\"bank_name\":\"Banque
+        Kolb\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"id\":128,\"bank_name\":\"Fortuneo\",\"percentage_success\":99.62,\"percentage_error\":0.38,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":true},{\"id\":502,\"bank_name\":\"Epsor\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:03.000Z\",\"country\":\"FR\",\"children\":[],\"active\":false},{\"bank_name\":\"Banque
+        Palatine\",\"percentage_success\":98.51,\"percentage_error\":1.49,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"country\":\"FR\",\"children\":[{\"id\":400,\"bank_name\":\"Banque
+        Palatine Particuliers\",\"percentage_success\":97.8,\"percentage_error\":2.2,\"refresh_at\":\"2023-07-26T09:01:00.000Z\",\"active\":true},{\"id\":388,\"bank_name\":\"Bq.
+        Palatine - Entreprises & Prof. Immobili\xE8res\",\"percentage_success\":99.35,\"percentage_error\":0.65,\"refresh_at\":\"2023-07-26T09:01:01.000Z\",\"active\":true}],\"active\":true},{\"bank_name\":\"BBVA\",\"percentage_success\":99.97,\"percentage_error\":0.03,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"country\":\"ES\",\"children\":[{\"id\":329,\"bank_name\":\"BBVA
+        Empresas Net Cash\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true},{\"id\":320,\"bank_name\":\"BBVA
+        Particulares\",\"percentage_success\":99.96,\"percentage_error\":0.04,\"refresh_at\":\"2023-07-26T09:01:02.000Z\",\"active\":true}],\"active\":true},{\"bank_name\":\"Unicaja\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"country\":\"ES\",\"children\":[{\"id\":370,\"bank_name\":\"Unicaja
+        Particulares\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"active\":true},{\"id\":371,\"bank_name\":\"Unicaja
+        Empresas\",\"percentage_success\":100.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:01:04.000Z\",\"active\":false}],\"active\":true},{\"id\":430,\"bank_name\":\"ABN
+        Amro\",\"percentage_success\":0.0,\"percentage_error\":0.0,\"refresh_at\":\"2023-07-26T09:00:59.000Z\",\"country\":\"NL\",\"children\":[],\"active\":false}]"
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'self';
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jul 2023 09:24:18 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - Bridge
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      - Accept-Encoding
+      - Origin
+      X-Robots-Tag:
+      - noindex
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

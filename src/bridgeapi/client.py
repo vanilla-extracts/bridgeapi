@@ -66,7 +66,7 @@ class AppClient(BaseClient):
         response = self._request("GET", f"banks/{bank_id}")
         return Bank.from_response(response)
 
-    def get_bank_connectors_status(self):
+    def get_bank_connectors_status(self) -> list[dict]:
         # TODO (20230719): Deserialization models
         response = self._request("GET", "banks/insights")
         return response.json()
@@ -267,23 +267,15 @@ class UserClient(BaseClient):
     def edit_item(
         self, item_id: int, redirect_url: str | None = None, context: str | None = None
     ) -> BridgeConnectUrl:
-        json_data = {
-            "item_id": item_id,
-            "redirect_url": redirect_url,
-            "context": context,
-        }
-        response = self._user_request("GET", "connect/items/edit", json=json_data)
+        params = {"item_id": item_id, "redirect_url": redirect_url, "context": context}
+        response = self._user_request("GET", "connect/items/edit", params=params)
         return BridgeConnectUrl.from_response(response)
 
     def manage_sca_sync_item(
         self, item_id: int, redirect_url: str | None = None, context: str | None = None
     ) -> BridgeConnectUrl:
-        json_data = {
-            "item_id": item_id,
-            "redirect_url": redirect_url,
-            "context": context,
-        }
-        response = self._user_request("GET", "connect/items/sync", json=json_data)
+        params = {"item_id": item_id, "redirect_url": redirect_url, "context": context}
+        response = self._user_request("GET", "connect/items/sync", params=params)
         return BridgeConnectUrl.from_response(response)
 
     def validate_pro_items(
