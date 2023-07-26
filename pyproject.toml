@@ -21,7 +21,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["pydantic", "requests"]
+dependencies = ["pydantic == 1.*", "requests"]
 
 [project.urls]
 Documentation = "https://gitlab.com/alex-marty/bridgeapi"
@@ -35,6 +35,9 @@ path = "src/bridgeapi/__about__.py"
 dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
+  "pytest-mock",
+  "pytest-recording",
+  "vcrpy==4.*"
 ]
 [tool.hatch.envs.default.scripts]
 test = "pytest {args:tests}"

@@ -12,10 +12,10 @@ from pydantic.generics import GenericModel
 from bridgeapi.base_client import BaseClient
 from bridgeapi.exceptions import PaginationError
 
-BaseModelT = TypeVar("BaseModelT", bound="BridgeBaseModel")
+ModelT = TypeVar("ModelT", bound="BaseResponseModel")
 
 
-class BridgeBaseModel(BaseModel):
+class BaseResponseModel(BaseModel):
     """Base model for all API resources. Allows storing the API response object along
     with the parsed data, accessible through the property `.response`.
 
@@ -26,7 +26,7 @@ class BridgeBaseModel(BaseModel):
     _response: requests.Response | None = PrivateAttr(None)
 
     @classmethod
-    def from_response(cls: type[BaseModelT], response: requests.Response) -> BaseModelT:
+    def from_response(cls: type[ModelT], response: requests.Response) -> ModelT:
         value = cls.parse_obj(response.json())
         value._response = response
         return value
@@ -43,11 +43,12 @@ class Pagination(BaseModel):
     next_uri: str | None = None
 
 
-class PaginatedResult(BridgeBaseModel, GenericModel, Generic[_T]):
+class PaginatedResult(BaseResponseModel, GenericModel, Generic[_T]):
     """Container storing results of a paginated API call."""
 
     resources: list[_T]
     pagination: Pagination
+    generated_at: dt.datetime | None  # Only exposed by list_categories
 
     _client: "BaseClient" = PrivateAttr()
     _page_number: int = PrivateAttr()
@@ -77,7 +78,7 @@ class PaginatedResult(BridgeBaseModel, GenericModel, Generic[_T]):
             msg = "paginated result has already been partially consumed"
             raise PaginationError(msg)
         result = self
-        resources = result.resources
+        resources = result.resources.copy()
         while result.has_more():
             result = result.next_page()
             resources.extend(result.resources)
@@ -91,7 +92,7 @@ class BankFormFieldType(Enum):
     PWD2 = "PWD2"
 
 
-class BankFormField(BridgeBaseModel):
+class BankFormField(BaseResponseModel):
     label: str
     type: BankFormFieldType
     isNum: str  # '0' or '1'  # noqa: N815  # mixedCase
@@ -99,13 +100,13 @@ class BankFormField(BridgeBaseModel):
     minLength: int | None = None  # noqa: N815
 
 
-class BankTransferProperties(BridgeBaseModel):
+class BankTransferProperties(BaseResponseModel):
     nb_max_transactions: int
     max_size_label: int | None = None
     multiple_dates_transfers: bool
 
 
-class BankPaymentProperties(BridgeBaseModel):
+class BankPaymentProperties(BaseResponseModel):
     nb_max_transactions: int
     max_size_label: int
     multiple_dates_payments: bool
@@ -135,7 +136,7 @@ class BankChannelType(Enum):
     DIRECT_ACCESS = "direct_access"
 
 
-class Bank(BridgeBaseModel):
+class Bank(BaseResponseModel):
     id: int
     name: str
     # Known countries as of 2023-07: BE, DE, ES, FR, GB, IT, LU, NL, PT
@@ -157,29 +158,29 @@ class Bank(BridgeBaseModel):
 
 
 # Users
-class User(BridgeBaseModel):
+class User(BaseResponseModel):
     uuid: UUID
     email: str
 
 
-class UserAuthInfo(BridgeBaseModel):
+class UserAuthInfo(BaseResponseModel):
     access_token: str
     expires_at: dt.datetime
     user: User
 
 
-class UserEmailValidation(BridgeBaseModel):
+class UserEmailValidation(BaseResponseModel):
     name: Literal["email"]
     is_confirmed: bool
 
 
 # Bridge Connect
-class BridgeConnectUrl(BridgeBaseModel):
+class BridgeConnectUrl(BaseResponseModel):
     redirect_url: HttpUrl
 
 
 # Items
-class Item(BridgeBaseModel):
+class Item(BaseResponseModel):
     # Codes and documentation at https://docs.bridgeapi.io/reference/item-resource
     id: int
     status: int
@@ -188,15 +189,16 @@ class Item(BridgeBaseModel):
     bank_id: int
 
 
-class ItemMfa(BridgeBaseModel):
+class ItemMfa(BaseResponseModel):
     type: str | None  # SMS or APP_TO_APP
     description: str | None
     label: str
     is_numeric: bool
 
 
-class ItemRefreshStatus(BridgeBaseModel):
+class ItemRefreshStatus(BaseResponseModel):
     # Codes and documentation at https://docs.bridgeapi.io/reference/get-a-refresh-status
+    id: str
     status: str
     refreshed_at: dt.datetime
     mfa: ItemMfa | None
@@ -205,7 +207,7 @@ class ItemRefreshStatus(BridgeBaseModel):
 
 
 # Accounts
-class LoanAccountDetails(BridgeBaseModel):
+class LoanAccountDetails(BaseResponseModel):
     next_payment_date: dt.date
     next_payment_amount: Decimal
     maturity_date: dt.date
@@ -217,7 +219,7 @@ class LoanAccountDetails(BridgeBaseModel):
     remaining_capital: Decimal
 
 
-class SavingsAccountDetails(BridgeBaseModel):
+class SavingsAccountDetails(BaseResponseModel):
     opening_date: dt.date
     interest_rate: float
     ceiling: Decimal
@@ -236,7 +238,7 @@ class AccountType(Enum):
     UNKNOWN = "unknown"
 
 
-class Account(BridgeBaseModel):
+class Account(BaseResponseModel):
     id: int
     name: str
     balance: Decimal
@@ -256,7 +258,7 @@ class Account(BridgeBaseModel):
 
 
 # Transactions
-class Transaction(BridgeBaseModel):
+class Transaction(BaseResponseModel):
     id: int
     clean_description: str
     bank_description: str
@@ -272,7 +274,7 @@ class Transaction(BridgeBaseModel):
 
 
 # Stocks
-class Stock(BridgeBaseModel):
+class Stock(BaseResponseModel):
     id: int
     current_price: Decimal
     quantity: Decimal
@@ -292,18 +294,18 @@ class Stock(BridgeBaseModel):
 
 
 # Categories
-class Category(BridgeBaseModel):
+class Category(BaseResponseModel):
     id: int
     name: str
     parent_id: int | None
 
 
-class ChildCategory(BridgeBaseModel):
+class ChildCategory(BaseResponseModel):
     id: int
     name: str
 
 
-class ParentCategory(BridgeBaseModel):
+class ParentCategory(BaseResponseModel):
     id: int
     name: str
     categories: list[ChildCategory]

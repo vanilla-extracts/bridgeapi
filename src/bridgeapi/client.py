@@ -170,21 +170,20 @@ class UserClient(BaseClient):
         self.user_password = user_password
         self.auto_renew = auto_renew
 
-        n_auth_args = sum([user_uuid is None, access_token is None, expires_at is None])
-        if n_auth_args != 3:  # noqa: PLR2004
-            if n_auth_args != 0:
-                msg = (
-                    "all of [user_uuid, access_token, expires_at] must be passed when setting "
-                    "user auth"
-                )
-                raise ValueError(msg)
+        auth_args = [user_uuid, access_token, expires_at]
+        if all(arg is None for arg in auth_args):
+            self.user_uuid = None
+            self.access_token = None
+            self.expires_at = None
+        elif all(arg is not None for arg in auth_args):
             self.user_uuid = user_uuid
             self.access_token = access_token
             self.expires_at = expires_at
         else:
-            self.user_uuid = None
-            self.access_token = None
-            self.expires_at = None
+            msg = (
+                "all of (user_uuid, access_token, expires_at) must be passed if setting user auth"
+            )
+            raise ValueError(msg)
 
     def is_authenticated(self, delay: dt.timedelta = dt.timedelta(minutes=1)) -> bool:
         """Return whether the user authentication is valid (defined and not expired).
