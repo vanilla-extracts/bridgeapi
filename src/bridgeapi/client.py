@@ -1,11 +1,7 @@
 """Clients for the Bridge API (https://bridgeapi.io).
 """
 
-# TODO (20230719):
-# * Handle return code of endpoints (200, 202, 204)
-# * Check presence of language header
-# * Add doc and links to Bridge API doc
-# * Sections left to implement:
+# TODO (20230719): Sections left to implement:
 #   * Payment links: app-scoped
 #   * Payment initiation: app-scoped
 #   * Bridge transfer: user-scoped, requires sales team activation
