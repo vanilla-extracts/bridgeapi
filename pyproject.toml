@@ -21,7 +21,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["pydantic == 1.*", "requests"]
+dependencies = ["pydantic >= 2", "requests"]
 
 [project.urls]
 Documentation = "https://gitlab.com/alex-marty/bridgeapi"

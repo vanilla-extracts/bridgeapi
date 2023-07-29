@@ -28,7 +28,7 @@ class RequestError(BridgeAPIError):
 
     @classmethod
     def from_response(cls, response: requests.Response) -> "RequestError":
-        response_data = ErrorResponseData.parse_obj(response.json())
+        response_data = ErrorResponseData.model_validate(response.json())
         return cls(response, response.status_code, response_data)
 
     def __str__(self) -> str:

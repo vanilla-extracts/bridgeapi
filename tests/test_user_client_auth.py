@@ -54,7 +54,7 @@ def test_renew_auth(mocker: MockerFixture, fixed_now, base_args):
     auth_info = UserAuthInfo(
         access_token="TOKEN",
         expires_at=expires_at,
-        user=User.construct(uuid="UUID", email="john@doe.com"),
+        user=User.model_construct(uuid="UUID", email="john@doe.com"),
     )
     m_auth = mocker.Mock(return_value=auth_info)
     mocker.patch(

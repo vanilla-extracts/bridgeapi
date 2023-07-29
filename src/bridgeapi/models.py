@@ -1,13 +1,13 @@
 # ruff: noqa: A002, A003  # Attribute names shadowing Python builtin
 import datetime as dt
+import os
 from decimal import Decimal
 from enum import Enum
-from typing import Generic, Literal, TypeVar
+from typing import Any, Generic, Literal, TypeVar
 from uuid import UUID
 
 import requests
-from pydantic import BaseModel, HttpUrl, PrivateAttr, constr
-from pydantic.generics import GenericModel
+from pydantic import BaseModel, HttpUrl, PrivateAttr, constr, model_serializer
 
 from bridgeapi.base_client import BaseClient
 from bridgeapi.exceptions import PaginationError
@@ -27,13 +27,24 @@ class BaseResponseModel(BaseModel):
 
     @classmethod
     def from_response(cls: type[ModelT], response: requests.Response) -> ModelT:
-        value = cls.parse_obj(response.json())
+        value = cls.model_validate(response.json())
         value._response = response
         return value
 
     @property
     def response(self) -> requests.Response | None:
         return self._response
+
+    if os.environ.get("BRIDGEAPI_MODEL_SERIALIZATION_HOOK") == "1":
+
+        @model_serializer(mode="wrap")
+        def _serialize(self, default_ser) -> dict[str, Any]:
+            """Hook to turn on custom serialization. Needs redefinition of `.serialize()`.
+
+            Activation of the hook is controlled by the `BRIDGEAPI_MODEL_SERIALIZATION_HOOK`
+            environment variable. No performance impact if disabled. Used for tests.
+            """
+            return self.serialize(default_ser)
 
 
 _T = TypeVar("_T")
@@ -43,12 +54,12 @@ class Pagination(BaseModel):
     next_uri: str | None = None
 
 
-class PaginatedResult(BaseResponseModel, GenericModel, Generic[_T]):
+class PaginatedResult(BaseResponseModel, Generic[_T]):
     """Container storing results of a paginated API call."""
 
     resources: list[_T]
     pagination: Pagination
-    generated_at: dt.datetime | None  # Only exposed by list_categories
+    generated_at: dt.datetime | None = None
 
     _client: "BaseClient" = PrivateAttr()
     _page_number: int = PrivateAttr()
@@ -57,7 +68,7 @@ class PaginatedResult(BaseResponseModel, GenericModel, Generic[_T]):
     def from_response(
         cls, response: requests.Response, client: "BaseClient", page_number: int = 0
     ) -> "PaginatedResult[_T]":
-        result = cls.parse_obj(response.json())
+        result = cls.model_validate(response.json())
         result._response = response
         result._client = client
         result._page_number = page_number

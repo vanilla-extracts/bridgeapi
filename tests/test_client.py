@@ -1,14 +1,13 @@
 import datetime as dt
-import json
 import os
 from collections.abc import Callable
 from dataclasses import dataclass, field
-from typing import get_type_hints
-from unittest.mock import _Call, call
+from typing import Any, get_type_hints
+from unittest.mock import _Call, call, patch
 
 import pytest
 import vcr
-from pydantic.json import pydantic_encoder
+from pydantic_core import Url
 
 from bridgeapi.base_client import BaseClient
 from bridgeapi.client import AppClient, UserClient
@@ -127,16 +126,25 @@ user_client_params = [
 user_client_param_ids = [p.case_id for p in user_client_params]
 
 
-def json_encoder(obj):
-    if isinstance(obj, dt.datetime):
-        s = obj.astimezone(dt.timezone.utc).isoformat(sep="T", timespec="milliseconds")
-        return s.split("+")[0] + "Z"
-    return pydantic_encoder(obj)
+def serialize_datetime(val: dt.datetime) -> str:
+    s = val.astimezone(dt.timezone.utc).isoformat(sep="T", timespec="milliseconds")
+    return s.split("+")[0] + "Z"
+
+
+def serialize_model(model: BaseResponseModel, default_ser: Callable) -> dict[str, Any]:
+    serialized = default_ser(model)
+    for field_name, field_value in model:
+        if isinstance(field_value, dt.datetime):
+            serialized[field_name] = serialize_datetime(field_value)
+        if isinstance(field_value, Url) and field_value.path == "/":
+            serialized[field_name] = str(field_value).replace("/?", "?")
+    return serialized
 
 
 def assert_json_eq(result: BaseResponseModel) -> None:
-    response_json = result.response.json()
-    result_json = json.loads(result.json(exclude_unset=True, encoder=json_encoder))
+    response_json = result.response.json(parse_float=str)
+    with patch.object(BaseResponseModel, "serialize", serialize_model, create=True):
+        result_json = result.model_dump(mode="json", exclude_unset=True)
     assert response_json == result_json
 
 
