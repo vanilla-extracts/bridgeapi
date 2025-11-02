@@ -3,15 +3,16 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "bridgeapi"
+name = "bridgeapi-updated"
 dynamic = ["version"]
-description = 'Client for the Bridge open banking API aggregator'
+description = 'Client (Updated for 2025 edition of the API) for the Bridge open banking API aggregator'
 readme = "README.md"
 requires-python = ">=3.10"  # Not before 3.10 because we use new the union types syntax
 license = "MIT"
 keywords = []
 authors = [
   { name = "Alexandre Marty", email = "contact@marty.in" },
+  { name = "Charlotte Thomas", email = "me@charlotte-thomas.me"},
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -24,9 +25,9 @@ classifiers = [
 dependencies = ["pydantic >= 2", "requests"]
 
 [project.urls]
-Documentation = "https://gitlab.com/alex-marty/bridgeapi"
-Issues = "https://gitlab.com/alex-marty/bridgeapi/-/issues"
-Source = "https://gitlab.com/alex-marty/bridgeapi"
+Documentation = "https://github.com/vanilla-extracts/bridgeapi"
+Issues = "https://github.com/vanilla-extracts/bridgeapi/-/issues"
+Source = "https://github.com/vanilla-extracts/bridgeapi"
 
 [tool.hatch.version]
 path = "src/bridgeapi/__about__.py"

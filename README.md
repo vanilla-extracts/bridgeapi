@@ -1,4 +1,4 @@
-# bridgeapi
+# BridgeAPI SDK Updated
 
 [![PyPI - Version](https://img.shields.io/pypi/v/bridgeapi.svg)](https://pypi.org/project/bridgeapi)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bridgeapi.svg)](https://pypi.org/project/bridgeapi)
@@ -14,7 +14,7 @@ Python 3.10+
 ## Installation
 
 ```console
-pip install bridgeapi
+pip install bridgeapi-updated
 ```
 
 ## Example
